@@ -31,7 +31,7 @@ Response Body
 |:-----------|-----------|-----------|
 | 1  | Send GET request /booking  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 200 OK  |
-| 3  | Check response  | Body response is present JSON schema is correct: key and type |
+| 3  | Check response  | Body response is present  |
 | 4  | Check struture | "bookingid" in each element |
 | 5  | Check bookingid type | "bookingid" is a number |
 
