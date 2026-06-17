@@ -48,7 +48,7 @@ Response Body
 **Priority:** High
 
 **Precondition:**  
-Create user    
+Create booking    
 firstname - RestfulBooker  
 lastname - Test 
 checkin - 2026-06-01     
@@ -86,7 +86,7 @@ Response Body
 
 
 **Postcondition:**  
-Delete test user "RestfulBooker Test" 
+Delete test booking "RestfulBooker Test" 
 
 **Tags:** automated
 
@@ -100,7 +100,7 @@ Delete test user "RestfulBooker Test"
 **Priority:** High
 
 **Precondition:**  
-Create user    
+Create booking    
 firstname - RestfulBooker  
 lastname - Test 
 checkin - 2026-01-01     
@@ -140,7 +140,7 @@ Response Body
 
 
 **Postcondition:**  
-Delete test user "RestfulBooker Test" 
+Delete test booking "RestfulBooker Test" 
 
 **Tags:** automated
 
@@ -154,7 +154,7 @@ Delete test user "RestfulBooker Test"
 **Priority:** High
 
 **Precondition:**  
-Create user    
+Create booking    
 firstname - RestfulBooker  
 lastname - Test 
 checkout - 2025-12-31     
@@ -194,7 +194,7 @@ Response Body
 
 
 **Postcondition:**  
-Delete test user "RestfulBooker Test" 
+Delete test booking "RestfulBooker Test" 
 
 **Tags:** automated
 
