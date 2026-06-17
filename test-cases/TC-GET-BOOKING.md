@@ -3,7 +3,7 @@
 **Priority:** High
 
 **Precondition:**   
-Create user and get his ID   
+Create booking and get his ID   
 firstname - RestfulBooker  
 lastname - Test 
 checkin - 2026-06-01     
