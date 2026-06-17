@@ -27,6 +27,7 @@ Response Body
         "checkin": "2025-02-16",
         "checkout": "2025-03-11"
     }
+    "additionalneeds": "QA skills"
 }
 ```
 
