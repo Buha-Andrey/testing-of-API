@@ -582,3 +582,60 @@ Response Body
 **Created by:** Buha Andrii
 
 ---
+
+### ID: SWAT-34359 - Title: Create booking with empty request body
+
+**Priority:** P2
+
+**Precondition:**  
+
+**Test data:**  
+ 
+**Request structure:**
+
+Endpoint https://restful-booker.herokuapp.com/booking
+
+Request Body
+```json
+{
+    "firstname": "Brandon", 
+    "lastname": "Sanderson", 
+    "totalprice": 100, 
+    "depositpaid": true, 
+    "bookingdates": {
+        "checkin": "2025-01-01",
+        "checkout": "2026-01-01"
+    }
+    "additionalneeds" : "books"
+}
+```
+Response Body
+```json
+{
+    "bookingid": 2468, 
+    "firstname": "Brandon", 
+    "lastname": "Sanderson", 
+    "totalprice": 100, 
+    "depositpaid": true, 
+    "bookingdates": {
+        "checkin": "2025-01-01",
+        "checkout": "2026-01-01"
+    }
+    "additionalneeds" : "books"
+}
+```
+
+**Steps:**
+|   #   | Step | Expected result |
+|:-----------|-----------|-----------|
+| 1  | Send POST request  /booking  | Request is sent.  |
+| 2  | Check code status  | HTTP Status 400 Bad Request |
+
+
+**Postcondition:**  
+
+**Tags:** automated
+
+**Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
+
+**Created by:** Buha Andrii
