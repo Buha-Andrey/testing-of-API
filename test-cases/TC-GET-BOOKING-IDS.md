@@ -16,10 +16,10 @@ Response Body
 ```json
 [
     {
-        "bookingid": 1
+        "bookingid": 1  // number
     },
     {
-        "bookingid": 2
+        "bookingid": 2  // number
     },
 /*  and so on */
 
@@ -67,10 +67,10 @@ Response Body
 ```json
 [
     {
-        "bookingid": 1
+        "bookingid": 1  // number
     },
     {
-        "bookingid": 2
+        "bookingid": 2  // number
     },
 /*  and so on */
 
