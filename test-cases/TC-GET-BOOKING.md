@@ -19,15 +19,16 @@ Endpoint https://restful-booker.herokuapp.com/booking
 Response Body
 ```json
 {
-    "firstname": "name", 
-    "lastname": "last", 
-    "totalprice": 852, 
-    "depositpaid": true, 
-    "bookingdates": {
-        "checkin": "2025-02-16",
-        "checkout": "2025-03-11"
-    }
-    "additionalneeds": "QA skills"
+  "bookingid": 1, // number
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
 }
 ```
 
