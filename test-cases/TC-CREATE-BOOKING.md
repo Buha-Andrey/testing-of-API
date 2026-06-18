@@ -20,30 +20,31 @@ Endpoint https://restful-booker.herokuapp.com/booking
 Request Body
 ```json
 {
-    "firstname": "Brandon", 
-    "lastname": "Sanderson", 
-    "totalprice": 100, 
-    "depositpaid": true, 
-    "bookingdates": {
-        "checkin": "2025-01-01",
-        "checkout": "2026-01-01"
-    }
-    "additionalneeds" : "books"
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
 }
 ```
+
 Response Body
 ```json
 {
-    "bookingid": 2468, 
-    "firstname": "Brandon", 
-    "lastname": "Sanderson", 
-    "totalprice": 100, 
-    "depositpaid": true, 
-    "bookingdates": {
-        "checkin": "2025-01-01",
-        "checkout": "2026-01-01"
-    }
-    "additionalneeds" : "books"
+  "bookingid": 1, // number
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
 }
 ```
 
@@ -89,30 +90,31 @@ Endpoint https://restful-booker.herokuapp.com/booking
 Request Body
 ```json
 {
-    "firstname": "Brandon", 
-    "lastname": "Sanderson", 
-    "totalprice": 100, 
-    "depositpaid": true, 
-    "bookingdates": {
-        "checkin": "2025-01-01",
-        "checkout": "2026-01-01"
-    }
-    "additionalneeds" : "books"
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
 }
 ```
+
 Response Body
 ```json
 {
-    "bookingid": 2468, 
-    "firstname": "Brandon", 
-    "lastname": "Sanderson", 
-    "totalprice": 100, 
-    "depositpaid": true, 
-    "bookingdates": {
-        "checkin": "2025-01-01",
-        "checkout": "2026-01-01"
-    }
-    "additionalneeds" : "books"
+  "bookingid": 1, // number
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
 }
 ```
 
@@ -161,30 +163,31 @@ Endpoint https://restful-booker.herokuapp.com/booking
 Request Body
 ```json
 {
-    "firstname": "Brandon", 
-    "lastname": "Sanderson", 
-    "totalprice": 100, 
-    "depositpaid": true, 
-    "bookingdates": {
-        "checkin": "2025-01-01",
-        "checkout": "2026-01-01"
-    }
-    "additionalneeds" : "books"
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
 }
 ```
+
 Response Body
 ```json
 {
-    "bookingid": 2468, 
-    "firstname": "Brandon", 
-    "lastname": "Sanderson", 
-    "totalprice": 100, 
-    "depositpaid": true, 
-    "bookingdates": {
-        "checkin": "2025-01-01",
-        "checkout": "2026-01-01"
-    }
-    "additionalneeds" : "books"
+  "bookingid": 1, // number
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
 }
 ```
 
@@ -233,30 +236,31 @@ Endpoint https://restful-booker.herokuapp.com/booking
 Request Body
 ```json
 {
-    "firstname": "Brandon", 
-    "lastname": "Sanderson", 
-    "totalprice": 100, 
-    "depositpaid": true, 
-    "bookingdates": {
-        "checkin": "2025-01-01",
-        "checkout": "2026-01-01"
-    }
-    "additionalneeds" : "books"
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
 }
 ```
+
 Response Body
 ```json
 {
-    "bookingid": 2468, 
-    "firstname": "Brandon", 
-    "lastname": "Sanderson", 
-    "totalprice": 100, 
-    "depositpaid": true, 
-    "bookingdates": {
-        "checkin": "2025-01-01",
-        "checkout": "2026-01-01"
-    }
-    "additionalneeds" : "books"
+  "bookingid": 1, // number
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
 }
 ```
 
@@ -308,30 +312,31 @@ Endpoint https://restful-booker.herokuapp.com/booking
 Request Body
 ```json
 {
-    "firstname": "Brandon", 
-    "lastname": "Sanderson", 
-    "totalprice": 100, 
-    "depositpaid": true, 
-    "bookingdates": {
-        "checkin": "2025-01-01",
-        "checkout": "2026-01-01"
-    }
-    "additionalneeds" : "books"
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
 }
 ```
+
 Response Body
 ```json
 {
-    "bookingid": 2468, 
-    "firstname": "Brandon", 
-    "lastname": "Sanderson", 
-    "totalprice": 100, 
-    "depositpaid": true, 
-    "bookingdates": {
-        "checkin": "2025-01-01",
-        "checkout": "2026-01-01"
-    }
-    "additionalneeds" : "books"
+  "bookingid": 1, // number
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
 }
 ```
 
@@ -383,33 +388,33 @@ Endpoint https://restful-booker.herokuapp.com/booking
 Request Body
 ```json
 {
-    "firstname": "Brandon", 
-    "lastname": "Sanderson", 
-    "totalprice": 100, 
-    "depositpaid": true, 
-    "bookingdates": {
-        "checkin": "2025-01-01",
-        "checkout": "2026-01-01"
-    }
-    "additionalneeds" : "books"
-}
-```
-Response Body
-```json
-{
-    "bookingid": 2468, 
-    "firstname": "Brandon", 
-    "lastname": "Sanderson", 
-    "totalprice": 100, 
-    "depositpaid": true, 
-    "bookingdates": {
-        "checkin": "2025-01-01",
-        "checkout": "2026-01-01"
-    }
-    "additionalneeds" : "books"
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
 }
 ```
 
+Response Body
+```json
+{
+  "bookingid": 1, // number
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
+}
+```
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
@@ -460,30 +465,31 @@ Endpoint https://restful-booker.herokuapp.com/booking
 Request Body
 ```json
 {
-    "firstname": "Brandon", 
-    "lastname": "Sanderson", 
-    "totalprice": 100, 
-    "depositpaid": true, 
-    "bookingdates": {
-        "checkin": "2025-01-01",
-        "checkout": "2026-01-01"
-    }
-    "additionalneeds" : "books"
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
 }
 ```
+
 Response Body
 ```json
 {
-    "bookingid": 2468, 
-    "firstname": "Brandon", 
-    "lastname": "Sanderson", 
-    "totalprice": 100, 
-    "depositpaid": true, 
-    "bookingdates": {
-        "checkin": "2025-01-01",
-        "checkout": "2026-01-01"
-    }
-    "additionalneeds" : "books"
+  "bookingid": 1, // number
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
 }
 ```
 
@@ -537,30 +543,31 @@ Endpoint https://restful-booker.herokuapp.com/booking
 Request Body
 ```json
 {
-    "firstname": "Brandon", 
-    "lastname": "Sanderson", 
-    "totalprice": 100, 
-    "depositpaid": true, 
-    "bookingdates": {
-        "checkin": "2025-01-01",
-        "checkout": "2026-01-01"
-    }
-    "additionalneeds" : "books"
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
 }
 ```
+
 Response Body
 ```json
 {
-    "bookingid": 2468, 
-    "firstname": "Brandon", 
-    "lastname": "Sanderson", 
-    "totalprice": 100, 
-    "depositpaid": true, 
-    "bookingdates": {
-        "checkin": "2025-01-01",
-        "checkout": "2026-01-01"
-    }
-    "additionalneeds" : "books"
+  "bookingid": 1, // number
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
 }
 ```
 
@@ -598,30 +605,31 @@ Endpoint https://restful-booker.herokuapp.com/booking
 Request Body
 ```json
 {
-    "firstname": "Brandon", 
-    "lastname": "Sanderson", 
-    "totalprice": 100, 
-    "depositpaid": true, 
-    "bookingdates": {
-        "checkin": "2025-01-01",
-        "checkout": "2026-01-01"
-    }
-    "additionalneeds" : "books"
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
 }
 ```
+
 Response Body
 ```json
 {
-    "bookingid": 2468, 
-    "firstname": "Brandon", 
-    "lastname": "Sanderson", 
-    "totalprice": 100, 
-    "depositpaid": true, 
-    "bookingdates": {
-        "checkin": "2025-01-01",
-        "checkout": "2026-01-01"
-    }
-    "additionalneeds" : "books"
+  "bookingid": 1, // number
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
 }
 ```
 
