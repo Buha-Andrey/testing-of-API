@@ -69,7 +69,9 @@ Delete the booking
 
 <br>
 <br>
+
 ---
+
 <br>
 <br>
 <br>
@@ -149,7 +151,9 @@ Delete the booking
 
 <br>
 <br>
+
 ---
+
 <br>
 <br>
 <br>
@@ -219,7 +223,9 @@ Response Body
 
 <br>
 <br>
+
 ---
+
 <br>
 <br>
 <br>
@@ -300,7 +306,9 @@ Delete booking
 
 <br>
 <br>
+
 ---
+
 <br>
 <br>
 <br>
@@ -381,7 +389,9 @@ Delete booking
 
 <br>
 <br>
+
 ---
+
 <br>
 <br>
 <br>
@@ -463,7 +473,9 @@ Delete booking
 
 <br>
 <br>
+
 ---
+
 <br>
 <br>
 <br>
@@ -546,7 +558,9 @@ Delete booking
 
 <br>
 <br>
+
 ---
+
 <br>
 <br>
 <br>
@@ -629,7 +643,9 @@ Delete booking
 
 <br>
 <br>
+
 ---
+
 <br>
 <br>
 <br>
@@ -712,7 +728,9 @@ Delete booking
 
 <br>
 <br>
+
 ---
+
 <br>
 <br>
 <br>
@@ -796,7 +814,9 @@ Delete booking
 
 <br>
 <br>
+
 ---
+
 <br>
 <br>
 <br>
@@ -881,7 +901,9 @@ Delete booking
 
 <br>
 <br>
+
 ---
+
 <br>
 <br>
 <br>
