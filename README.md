@@ -12,7 +12,7 @@ Checklist of TC-UPDATE-BOOKING PUT /booking/:id
 7. Update booking with invalid value of lastname
 8. Update booking with invalid value of totalprice
 9. Update booking with invalid value of checkout
-10. Update booking with invalid value checkin
+10. Update booking with invalid value of checkin
 11. Update booking with invalid value of additionalneeds
 12. Update booking using invalid method
 
@@ -27,7 +27,7 @@ Checklist of TC-UPDATE-BOOKING PUT /booking/:id
 |7.| Update booking with invalid value of lastname |
 |8.| Update booking with invalid value of totalprice |
 |9.| Update booking with invalid value of checkout |
-|10.| Update booking with invalid value checkin |
+|10.| Update booking with invalid value of checkin |
 |11.| Update booking with invalid value of additionalneeds |
 |12.| Update booking using invalid method |
 
