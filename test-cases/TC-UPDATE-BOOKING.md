@@ -4,7 +4,7 @@
 
 **Precondition:**
 Authorize as admin 
-Create booking with valid filled fields
+Create booking with valid data
 
 **Test data:**  
 firstname - Name  
