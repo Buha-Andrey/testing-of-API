@@ -7,14 +7,15 @@ Checklist of TC-UPDATE-BOOKING PUT /booking/:id
 2. Update booking with header Accept: application/xml
 3. Update non-existent booking
 4. Update booking without header Content-Type
-5. Update booking with invalid value of Content-Type header
-6. Update booking: firstname field validation
-7. Update booking: lastname field validation
-8. Update booking: totalprice field validation
-9. Update booking: depositpaid field validation
-10. Update booking: checkin field validation
-11. Update booking: checkout field validation
-12. Update booking: additionalneeds field validation
+5. Update booking without header Accept 
+6. Update booking with invalid value of Content-Type header
+7. Update booking: firstname field validation
+8. Update booking: lastname field validation
+9. Update booking: totalprice field validation
+10. Update booking: depositpaid field validation
+11. Update booking: checkin field validation
+12. Update booking: checkout field validation
+13. Update booking: additionalneeds field validation
 
 |  # | description  | 
 |:-----------|-----------|
