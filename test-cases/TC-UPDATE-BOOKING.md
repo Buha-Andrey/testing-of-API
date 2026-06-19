@@ -2,18 +2,18 @@
 
 **Priority:** P1
 
-**Precondition:**
-Authorize as admin 
-Create booking with valid data
+**Precondition:**  
+Authorize as admin  
+Create booking with valid data  
 
-**Test data:**  
-firstname - Name
-lastname - Last
-totalprice - 1
-depositpaid - fasle
-checkin - 2028-01-01
-checkout - 2028-01-01
-additionalneeds - Wifi
+**Test data:**    
+firstname - Name  
+lastname - Last  
+totalprice - 1   
+depositpaid - fasle  
+checkin - 2028-01-01  
+checkout - 2028-01-01  
+additionalneeds - Wifi  
  
 **Request structure:**
 
@@ -81,20 +81,20 @@ Delete the booking
 
 **Priority:** P1
 
-**Precondition:**
-Authorize as admin 
-Create booking with valid data
+**Precondition:**  
+Authorize as admin   
+Create booking with valid data  
 
-**Test data:**  
+**Test data:**    
 Header Accept : "application/xml"
 
-firstname - Name
-lastname - Last
-totalprice - 1
-depositpaid - fasle
-checkin - 2028-01-01
-checkout - 2028-01-01
-additionalneeds - Wifi
+firstname - Name  
+lastname - Last  
+totalprice - 1  
+depositpaid - fasle  
+checkin - 2028-01-01  
+checkout - 2028-01-01  
+additionalneeds - Wifi  
  
 **Request structure:**
 
@@ -139,7 +139,7 @@ Response Body
 | 3  | Check structure  of response body | Respons body is present in XML format. Response body contains expected keys.  |
 | 4  | Check value of keys | Value is changed to updated data |
 
-**Postcondition:**  
+**Postcondition:**    
 Delete the booking
 
 
@@ -163,11 +163,11 @@ Delete the booking
 
 **Priority:** P1
 
-**Precondition:**
-Authorize as admin 
+**Precondition:**  
+Authorize as admin   
 
-**Test data:**  
-id = 9999
+**Test data:**    
+id = 9999  
  
 **Request structure:**
 
@@ -235,19 +235,18 @@ Response Body
 
 **Priority:** P1
 
-**Precondition:**
-Authorize as admin 
-Create booking with valid data
+**Precondition:**  
+Authorize as admin   
+Create booking with valid data  
 
-**Test data:**  
-
-firstname - Name
-lastname - Last
-totalprice - 1
-depositpaid - fasle
-checkin - 2028-01-01
-checkout - 2028-01-01
-additionalneeds - Wifi
+**Test data:**    
+firstname - Name  
+lastname - Last  
+totalprice - 1  
+depositpaid - fasle  
+checkin - 2028-01-01  
+checkout - 2028-01-01  
+additionalneeds - Wifi  
 
 
 
@@ -318,19 +317,18 @@ Delete booking
 
 **Priority:** P1
 
-**Precondition:**
-Authorize as admin 
-Create booking with valid data
+**Precondition:**  
+Authorize as admin   
+Create booking with valid data  
 
-**Test data:**  
-
-firstname - Name
-lastname - Last
-totalprice - 1
-depositpaid - fasle
-checkin - 2028-01-01
-checkout - 2028-01-01
-additionalneeds - Wifi
+**Test data:**    
+firstname - Name  
+lastname - Last  
+totalprice - 1  
+depositpaid - fasle  
+checkin - 2028-01-01  
+checkout - 2028-01-01  
+additionalneeds - Wifi  
 
 
 
@@ -401,20 +399,20 @@ Delete booking
 
 **Priority:** P1
 
-**Precondition:**
-Authorize as admin 
-Create booking with valid data
+**Precondition:**  
+Authorize as admin   
+Create booking with valid data  
 
-**Test data:**  
-Content-Type : text/plain
+**Test data:**    
+Content-Type : text/plain  
 
-firstname - Name
-lastname - Last
-totalprice - 1
-depositpaid - fasle
-checkin - 2028-01-01
-checkout - 2028-01-01
-additionalneeds - Wifi
+firstname - Name  
+lastname - Last  
+totalprice - 1  
+depositpaid - fasle  
+checkin - 2028-01-01  
+checkout - 2028-01-01  
+additionalneeds - Wifi  
 
 
 
@@ -461,8 +459,8 @@ Response Body
 | 3  | Check structure  of response body | Response body contains expected keys.  |
 
 
-**Postcondition:**  
-Delete booking
+**Postcondition:**    
+Delete booking  
 
 
 **Tags:** automated
@@ -485,15 +483,15 @@ Delete booking
 
 **Priority:** P2
 
-**Precondition:**
-Authorize as admin 
-Create booking with valid data
+**Precondition:**  
+Authorize as admin   
+Create booking with valid data  
 
-**Test data:**  
+**Test data:**    
 
-firstname - ""
-firstname - 69
-firstname - null
+firstname - ""  
+firstname - 69  
+firstname - null  
 
 
 
@@ -570,15 +568,15 @@ Delete booking
 
 **Priority:** P2
 
-**Precondition:**
-Authorize as admin 
-Create booking with valid data
+**Precondition:**  
+Authorize as admin   
+Create booking with valid data  
 
-**Test data:**  
+**Test data:**    
 
-lastname  - ""
-lastname  - 69
-lastname  - null
+lastname  - ""  
+lastname  - 69  
+lastname  - null  
 
 
 
@@ -655,15 +653,15 @@ Delete booking
 
 **Priority:** P2
 
-**Precondition:**
-Authorize as admin 
-Create booking with valid data
+**Precondition:**  
+Authorize as admin   
+Create booking with valid data  
 
-**Test data:**  
+**Test data:**    
 
-totalprice  - -1
-totalprice  - 0
-totalprice  - "qwerty"
+totalprice  - -1  
+totalprice  - 0  
+totalprice  - "qwerty"  
 
 
 
@@ -740,16 +738,16 @@ Delete booking
 
 **Priority:** P2
 
-**Precondition:**
-Authorize as admin 
-Create booking with valid data
+**Precondition:**  
+Authorize as admin   
+Create booking with valid data  
 
-**Test data:**  
+**Test data:**    
 
-depositpaid  - -1
-depositpaid  - 0
-depositpaid  - "0"
-depositpaid - null
+depositpaid  - -1  
+depositpaid  - 0  
+depositpaid  - "0"  
+depositpaid - null  
 
 
 **Request structure:**
@@ -826,17 +824,17 @@ Delete booking
 
 **Priority:** P2
 
-**Precondition:**
-Authorize as admin 
-Create booking with valid data
+**Precondition:**  
+Authorize as admin   
+Create booking with valid data  
 
-**Test data:**  
+**Test data:**    
 
-checkin - 1
-checkin - "qwerty"
-checkin - "2018"
-checkin - "2018-13-32"
-checkin - null
+checkin - 1  
+checkin - "qwerty"  
+checkin - "2018"  
+checkin - "2018-13-32"  
+checkin - null  
 
 **Request structure:**
 
@@ -913,17 +911,17 @@ Delete booking
 
 **Priority:** P2
 
-**Precondition:**
-Authorize as admin 
-Create booking with valid data
+**Precondition:**  
+Authorize as admin   
+Create booking with valid data  
 
-**Test data:**  
+**Test data:**    
 
-checkout - 1
-checkout - "qwerty"
-checkout - "2018"
-checkout - "2018-13-32"
-checkout - null
+checkout - 1  
+checkout - "qwerty"  
+checkout - "2018"  
+checkout - "2018-13-32"  
+checkout - null  
 
 **Request structure:**
 
