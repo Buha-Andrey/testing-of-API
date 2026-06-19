@@ -16,6 +16,21 @@ Checklist of TC-UPDATE-BOOKING PUT /booking/:id
 11. Update booking with invalid value of additionalneeds
 12. Update booking using invalid method
 
+|  # | description  | 
+|:-----------|-----------|
+|1.| Update all fields with valid data |
+|2.| Update booking with Accept header = application/xml|
+|3.| Update booking with non-existent ID |
+|4.| Update booking with no Content-Type header |
+|5.| Update booking with invalid value of Content-Type header |
+|6.| Update booking with invalid value of firstname |
+|7.| Update booking with invalid value of lastname |
+|8.| Update booking with invalid value of totalprice |
+|9.| Update booking with invalid value of checkout |
+|10.| Update booking with invalid value checkin |
+|11.| Update booking with invalid value of additionalneeds |
+|12.| Update booking using invalid method |
+
 
 
 
