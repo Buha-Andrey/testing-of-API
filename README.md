@@ -3,7 +3,7 @@ https://restful-booker.herokuapp.com/apidoc/index.html
 
 
 Checklist of TC-UPDATE-BOOKING PUT /booking/:id
-1. Update all fields with valid data 
+1. Update booking: all fields with valid data 
 2. Update booking with Accept header = application/xml
 3. Update booking with non-existent ID
 4. Update booking with no Content-Type header
