@@ -1,6 +1,16 @@
 # testing-of-restful-booker
 https://restful-booker.herokuapp.com/apidoc/index.html
 
+Checklist of TC-AUTH POST /auth  
+1. Authentication with valid credentials.
+2. POST /auth generates unique token on each request  
+3. Authentication fails with incorrect password  
+4. Authentication fails with incorrect username  
+5. Authentication with empty username  
+6. Authentication with empty password  
+7. Authentication without header Content-Type  
+8. Authentication with invalid value of Content-Type header  
+
 
 Checklist of TC-UPDATE-BOOKING PUT /booking/:id
 1. Update booking: all fields with valid data 
