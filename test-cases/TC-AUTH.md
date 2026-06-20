@@ -386,7 +386,7 @@ Request Body
 <br>
 <br>
 
-### ID: SWAT-33932 - Title: Authentication without header Content-Type
+### ID: SWAT-33932 - Title: Authentication with invalid value of Content-Type header
 
 **Priority:** P2
 
