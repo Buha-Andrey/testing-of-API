@@ -39,7 +39,14 @@ Response Body
 
 **Created by:** Buha Andrii
 
+<br>
+<br>
+
 ---
+
+<br>
+<br>
+<br>
 
 ### ID: SWAT-34334 - Title: Filter booking by firstname, lastname, checkin, checkout
 
@@ -91,7 +98,14 @@ Delete test booking
 
 **Created by:** Buha Andrii
 
+<br>
+<br>
+
 ---
+
+<br>
+<br>
+<br>
 
 ### ID: SWAT-34335 - Title: Boundary value analysis of checkin date 
 **Priority:** P1
@@ -144,7 +158,14 @@ Delete test booking
 
 **Created by:** Buha Andrii
 
+<br>
+<br>
+
 ---
+
+<br>
+<br>
+<br>
 
 ### ID: SWAT-34336 - Title: Boundary value analysis of checkout date
 **Priority:** P1
