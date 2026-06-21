@@ -11,6 +11,12 @@ Checklist of TC-AUTH POST /auth
 7. Authentication without header Content-Type  
 8. Authentication with invalid value of Content-Type header  
 
+Checklist of TC-GET-BOOKING-IDS GET /booking
+1. Get list of booking ids
+2. Filter booking by firstname, lastname, checkin, checkout
+3. Boundary value analysis of checkin date
+4. Boundary value analysis of checkout date
+
 
 Checklist of TC-UPDATE-BOOKING PUT /booking/:id
 1. Update booking: all fields with valid data 
