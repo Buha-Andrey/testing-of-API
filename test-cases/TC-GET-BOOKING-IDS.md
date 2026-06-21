@@ -1,6 +1,6 @@
 ### ID: SWAT-34333 - Title: Get list of booking ids 
 
-**Priority:** High
+**Priority:** P1
 
 **Precondition:** -
 
@@ -9,8 +9,6 @@
 **Request structure:**
 
 Endpoint https://restful-booker.herokuapp.com/booking
-
-Query parameters - 
 
 Response Body
 ```json
@@ -43,16 +41,16 @@ Response Body
 
 ---
 
-### ID: SWAT-34334 - Title: Get booking id of test user
+### ID: SWAT-34334 - Title: Filter booking by firstname, lastname, checkin, checkout
 
-**Priority:** High
+**Priority:** P1
 
 **Precondition:**  
-Create booking    
-firstname - RestfulBooker  
-lastname - Test 
-checkin - 2026-06-01     
-checkout - 2026-06-17  
+Create booking     
+firstname - RestfulBooker   
+lastname - Test  
+checkin - 2026-06-01      
+checkout - 2026-06-17   
 
 
 **Test data:** -
@@ -73,7 +71,6 @@ Response Body
         "bookingid": 2  // number
     },
 /*  and so on */
-
 ]
 ```
 
@@ -86,7 +83,7 @@ Response Body
 
 
 **Postcondition:**  
-Delete test booking "RestfulBooker Test" 
+Delete test booking 
 
 **Tags:** automated
 
@@ -96,14 +93,14 @@ Delete test booking "RestfulBooker Test"
 
 ---
 
-### ID: SWAT-34335 - Title: Get user and filter him by checkin date
-**Priority:** High
+### ID: SWAT-34335 - Title: Boundary value analysis of checkin date 
+**Priority:** P1
 
-**Precondition:**  
-Create booking    
-firstname - RestfulBooker  
-lastname - Test 
-checkin - 2026-01-01     
+**Precondition:**   
+Create booking     
+firstname - RestfulBooker   
+lastname - Test  
+checkin - 2026-01-01      
 
 
 **Test data:** -
@@ -124,7 +121,6 @@ Response Body
         "bookingid": 2
     },
 /*  and so on */
-
 ]
 ```
 
@@ -140,7 +136,7 @@ Response Body
 
 
 **Postcondition:**  
-Delete test booking "RestfulBooker Test" 
+Delete test booking 
 
 **Tags:** automated
 
@@ -150,13 +146,13 @@ Delete test booking "RestfulBooker Test"
 
 ---
 
-### ID: SWAT-34336 - Title: Get user and filter him by checkout date
-**Priority:** High
+### ID: SWAT-34336 - Title: Boundary value analysis of checkout date
+**Priority:** P1
 
 **Precondition:**  
 Create booking    
 firstname - RestfulBooker  
-lastname - Test 
+lastname - Test  
 checkout - 2025-12-31     
 
 
@@ -178,7 +174,6 @@ Response Body
         "bookingid": 2
     },
 /*  and so on */
-
 ]
 ```
 
@@ -194,7 +189,7 @@ Response Body
 
 
 **Postcondition:**  
-Delete test booking "RestfulBooker Test" 
+Delete test booking 
 
 **Tags:** automated
 
