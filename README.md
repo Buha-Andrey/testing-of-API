@@ -17,6 +17,14 @@ Checklist of TC-GET-BOOKING-IDS GET /booking
 3. Boundary value analysis of checkin date
 4. Boundary value analysis of checkout date
 
+Checklist of TC-GET-BOOKING GET /booking/id
+1. Get booking with existing valid ID
+2. Get booking with existing valid ID in xml format
+3. Get booking without header Accept
+4. Get booking with non-existent valid ID 
+5. Get booking: ID parameter validation 
+
+
 
 Checklist of TC-UPDATE-BOOKING PUT /booking/:id
 1. Update booking: all fields with valid data 
