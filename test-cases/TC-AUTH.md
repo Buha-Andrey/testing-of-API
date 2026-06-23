@@ -122,8 +122,7 @@ Response Body
 
 **Priority:** P2
 
-**Precondition:** 
--
+**Precondition:** -
 
 **Test data:**
 
@@ -177,8 +176,7 @@ Response Body
 
 **Priority:** P2
 
-**Precondition:**   
--  
+**Precondition:**  -  
 
 **Test data:**
 
