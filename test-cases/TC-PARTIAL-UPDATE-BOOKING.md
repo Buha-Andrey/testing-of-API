@@ -100,7 +100,7 @@ Response Body
     "checkin": "2026-06-20",  // date,  CCYY-MM-DD
     "checkout": "2026-06-25"  // date,  CCYY-MM-DD
   },
-  "additionalneeds": "/* string, */"
+  "additionalneeds": "/* string */"
 }
 ```
 
@@ -167,7 +167,7 @@ Response Body
     "checkin": "2026-06-20",  // date,  CCYY-MM-DD
     "checkout": "2026-06-25"  // date,  CCYY-MM-DD
   },
-  "additionalneeds": "/* string, */"
+  "additionalneeds": "/* string */"
 }
 ```
 
@@ -235,7 +235,7 @@ Response Body
     "checkin": "2026-06-20",  // date,  CCYY-MM-DD
     "checkout": "2026-06-25"  // date,  CCYY-MM-DD
   },
-  "additionalneeds": "/* string, */"
+  "additionalneeds": "/* string */"
 }
 ```
 
@@ -306,7 +306,7 @@ Response Body
     "checkin": "2026-06-20",  // date,  CCYY-MM-DD
     "checkout": "2026-06-25"  // date,  CCYY-MM-DD
   },
-  "additionalneeds": "/* string, */"
+  "additionalneeds": "/* string */"
 }
 ```
 
@@ -378,7 +378,7 @@ Response Body
     "checkin": "2026-06-20",  // date,  CCYY-MM-DD
     "checkout": "2026-06-25"  // date,  CCYY-MM-DD
   },
-  "additionalneeds": "/* string, */"
+  "additionalneeds": "/* string */"
 }
 ```
 
@@ -432,7 +432,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 Request Body
 ```json
 {
-  "firstname": "/* string */",
+  "firstname": "/* string */"
 }
 ```
 
@@ -497,7 +497,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 Request Body
 ```json
 {
-  "firstname": "/* string */",
+  "firstname": "/* string */"
 }
 ```
 
@@ -549,7 +549,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 Request Body
 ```json
 {
-  "firstname": "/* string */",
+  "firstname": "/* string */"
 }
 ```
 
@@ -601,7 +601,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 Request Body
 ```json
 {
-  "firstname": "/* string */",
+  "firstname": "/* string */"
 }
 ```
 
@@ -653,7 +653,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 Request Body
 ```json
 {
-  "firstname": "/* string */",
+  "firstname": "/* string */"
 }
 ```
 
@@ -709,7 +709,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 Request Body
 ```json
 {
-  "firstname": "/* string */",
+  "firstname": "/* string */"
 }
 ```
 
