@@ -238,13 +238,13 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
 | 1  | Send GET request /booking/0  | Request is sent.  |
-| 2  | Check code status  | HTTP Status 404 OK  |
+| 2  | Check code status  | HTTP Status 404 Not Found  |
 | 3  | Check response body  | Error message is returned.  |
 | 4  | Send GET request /booking/-10  | Request is sent.  |
-| 5  | Check code status  | HTTP Status 404 OK  |
+| 5  | Check code status  | HTTP Status 404 Not Found  |
 | 6  | Check response body  | Error message is returned.  |
 | 7  | Send GET request /booking/qwerty  | Request is sent.  |
-| 8  | Check code status  | HTTP Status 404 OK  |
+| 8  | Check code status  | HTTP Status 400 Bad Request  |
 | 9  | Check response body  | Error message is returned.  |
 
 
