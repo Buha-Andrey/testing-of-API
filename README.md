@@ -27,10 +27,10 @@ Positive
 
 Negative
 1. PUT without token
-2. PUT with invalid token
-3. PATCH without token
-4. PATCH with invalid token
-5. DELETE without token
+2. PATCH without token
+3. DELETE without token
+4. PUT with invalid token
+5. PATCH with invalid token
 6. DELETE with invalid token
  
 
