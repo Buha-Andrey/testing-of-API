@@ -290,7 +290,7 @@ Request Body
 ```json
 {
   "bookingdates": {
-    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkin": "2026-06-20"  // date,  CCYY-MM-DD
   }
 }
 ```
