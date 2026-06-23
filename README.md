@@ -3,7 +3,8 @@ https://restful-booker.herokuapp.com/apidoc/index.html
 
 <br>
 
-***Checklist of TC-AUTH POST /auth***  
+***Checklist of TC-AUTH***  
+**Authentication (POST /auth)**
 
 Positive
 1. Authentication with valid credentials.
@@ -15,7 +16,23 @@ Negative
 3. Authentication with empty username  
 4. Authentication with empty password  
 5. Authentication without header Content-Type  
-6. Authentication with invalid value of Content-Type header  
+6. Authentication with invalid value of Content-Type header
+
+***Authorization (Token Usage)***
+
+Positive
+1. PUT with valid token
+2. PATCH with valid token
+3. DELETE with valid token
+
+Negative
+1. PUT without token
+2. PUT with invalid token
+3. PATCH without token
+4. PATCH with invalid token
+5. DELETE without token
+6. DELETE with invalid token
+ 
 
 <br>
 
