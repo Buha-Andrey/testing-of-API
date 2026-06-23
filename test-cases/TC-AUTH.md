@@ -1,5 +1,9 @@
-### ID: SWAT-33928 - Title: Authentication with valid credentials
-**Priority:** P1
+# Authentication (POST /auth)
+
+## Positive
+
+### ID: SWAT-33928 - Title: Authentication with valid credentials  
+**Priority:** P1  
 
 **Precondition:**   
 Server is active  
@@ -47,13 +51,12 @@ Response Body
 **Created by:** Buha Andrii
 
 <br>
+
+##
+
+<br>
 <br>
 
----
-
-<br>
-<br>
-<br>
 
 
 ### ID: SWAT-33928 - Title: POST /auth generates unique token on each request
@@ -107,13 +110,13 @@ Response Body
 **Created by:** Buha Andrii
 
 <br>
+
+
+## Negative
+
+<br>
 <br>
 
----
-
-<br>
-<br>
-<br>
 
 ### ID: SWAT-33929 - Title: Authentication fails with incorrect password
 
@@ -163,11 +166,9 @@ Response Body
 
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
@@ -219,11 +220,9 @@ Response Body
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
@@ -273,11 +272,9 @@ Response Body
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
@@ -328,11 +325,9 @@ Response Body
 
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
@@ -378,11 +373,9 @@ Request Body
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
