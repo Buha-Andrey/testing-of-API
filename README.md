@@ -57,13 +57,13 @@ Checklist of TC-UPDATE-BOOKING PUT /booking/:id
 14. Update booking with empty request body !!!!!!!!
 
 Checklist of TC-PARTIAL-UPDATE-BOOKING PATCH /booking/:id !!!!!!!!
-1. Partial update firstname with valid data 
-2. Partial update lastname with valid data 
-3. Partial update totalprice with valid data
-4. Partial update depositpaid with valid data
-5. Partial update checkin with valid data
-6. Partial update checkout with valid data
-7. Partial update additional needs with valid data
+1. Partial update: firstname field with valid data 
+2. Partial update: lastname field with valid data 
+3. Partial update: totalprice field with valid data
+4. Partial update: depositpaid field with valid data
+5. Partial update: checkin field with valid data
+6. Partial update: checkout field with valid data
+7. Partial update: additional needs field with valid data
 8. Partial update booking with header Accept: application/xml
 9. Partial update non-existent booking
 10. Partial update booking without header Content-Type
