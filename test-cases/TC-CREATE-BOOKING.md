@@ -1,6 +1,86 @@
-### ID: SWAT-34353 - Title: Create booking with valid data
+### ID: SWAT-34353 - Title: Create booking: all fields with valid data
 
 **Priority:** P0
+
+**Precondition:**  
+ 
+**Test data:**   
+Accept: application/json  
+Content-Type: application/json  
+firstname - Brandon   
+lastname - Sanderson  
+totalprice - 100  
+depositpaid - true  
+checkin - 2025-01-01  
+checkout - 2026-01-01  
+additionalneeds - books  
+ 
+**Request structure:**
+
+Endpoint https://restful-booker.herokuapp.com/booking
+
+Request Body
+```json
+{
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
+}
+```
+
+Response Body
+```json
+{
+  "bookingid": 1, // number
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
+}
+```
+
+**Steps:**
+|   #   | Step | Expected result |
+|:-----------|-----------|-----------|
+| 1  | Send POST request  /booking/ with test data in request body  | Request is sent.  |
+| 2  | Check code status  | HTTP Status 201 Created  |
+| 3  | Check struture of response body | Response body contains expected keys.  |
+| 4  | Check every key type | Every key matches expected type |
+
+**Postcondition:**  
+Delete the booking
+
+
+**Tags:** automated
+
+**Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
+
+**Created by:** Buha Andrii
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
+<br>
+
+
+### ID: SWAT-34353 - Title: POST /booking creates unique booking on each request
+
+**Priority:** P2
 
 **Precondition:**  
 
@@ -53,8 +133,89 @@ Response Body
 |:-----------|-----------|-----------|
 | 1  | Send POST request  /booking/ with test data in request body  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 201 Created  |
-| 3  | Check struture of response body | Response body contains expected keys.  |
-| 4  | Check every key type | Every key has expected type of value |
+| 3  | Check created ID  | Response body contains ID.  |
+| 4  | Send the same POST request  /booking/ | Request is sent.  |
+| 5  | Check code status  | HTTP Status 201 Created  |
+| 6  | Check created ID  | Response body contains ID. ID of first request differs from ID of second request |
+
+**Postcondition:**  
+Delete the bookings
+
+
+**Tags:** automated
+
+**Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
+
+**Created by:** Buha Andrii
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
+<br>
+
+
+### ID: SWAT-34353 - Title: Create booking with header Accept: application/xml
+
+**Priority:** P1
+
+**Precondition:**  
+
+**Test data:**  
+Accept: application/xml  
+firstname - Brandon  
+lastname - Sanderson  
+totalprice - 100  
+depositpaid - true  
+checkin - 2025-01-01  
+checkout - 2026-01-01  
+additionalneeds - books  
+ 
+**Request structure:**
+
+Endpoint https://restful-booker.herokuapp.com/booking
+
+Request Body
+```json
+{
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
+}
+```
+
+Response Body
+```json
+{
+  "bookingid": 1, // number
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
+}
+```
+
+**Steps:**
+|   #   | Step | Expected result |
+|:-----------|-----------|-----------|
+| 1  | Send POST request  /booking/ with test data in request body  | Request is sent.  |
+| 2  | Check code status  | HTTP Status 201 Created  |
+| 3  | Check struture of response body | Response body is xml. Response body contains expected keys.  |
+| 4  | Check every key type | Every key matches expected type |
 
 **Postcondition:**  
 Delete the booking
@@ -66,9 +227,249 @@ Delete the booking
 
 **Created by:** Buha Andrii
 
+<br>
+<br>
+
 ---
 
-### ID: SWAT-34354 - Title: Create booking with invalid firstname key
+<br>
+<br>
+<br>
+
+### ID: SWAT-34353 - Title: Create booking without header Content-Type
+
+**Priority:** P2
+
+**Precondition:**  
+
+**Test data:**  
+Content-Type: (empty)  
+  
+firstname - Brandon  
+lastname - Sanderson  
+totalprice - 100  
+depositpaid - true  
+checkin - 2025-01-01  
+checkout - 2026-01-01  
+additionalneeds - books  
+ 
+**Request structure:**
+
+Endpoint https://restful-booker.herokuapp.com/booking
+
+Request Body
+```json
+{
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
+}
+```
+
+Response Body
+```json
+{
+  "bookingid": 1, // number
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
+}
+```
+
+**Steps:**
+|   #   | Step | Expected result |
+|:-----------|-----------|-----------|
+| 1  | Send POST request  /booking/ with test data in request body  | Request is sent.  |
+| 2  | Check code status  | HTTP Status 400 Bad Request  |
+| 3  | Check struture of response body | Response body contains expected keys.  |
+
+
+**Postcondition:**  
+Delete the booking
+
+
+**Tags:** automated
+
+**Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
+
+**Created by:** Buha Andrii
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
+<br>
+
+### ID: SWAT-34353 - Title: Create booking without header Accept 
+
+**Priority:** P2
+
+**Precondition:**  
+
+**Test data:**  
+Accept:(empty)  
+firstname - Brandon  
+lastname - Sanderson  
+totalprice - 100  
+depositpaid - true  
+checkin - 2025-01-01  
+checkout - 2026-01-01  
+additionalneeds - books  
+ 
+**Request structure:**
+
+Endpoint https://restful-booker.herokuapp.com/booking
+
+Request Body
+```json
+{
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
+}
+```
+
+Response Body
+```json
+{
+  "bookingid": 1, // number
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
+}
+```
+
+**Steps:**
+|   #   | Step | Expected result |
+|:-----------|-----------|-----------|
+| 1  | Send POST request  /booking/ with test data in request body  | Request is sent.  |
+| 2  | Check code status  | HTTP Status 400 Bad Request  |
+| 3  | Check struture of response body | Response body contains expected keys.  |
+
+**Postcondition:**  
+Delete the booking
+
+
+**Tags:** automated
+
+**Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
+
+**Created by:** Buha Andrii
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
+<br>
+
+### ID: SWAT-34353 - Title: Create booking with invalid value of Content-Type header
+
+**Priority:** P2
+
+**Precondition:**  
+
+**Test data:**  
+Content-Type : text/plain  
+firstname - Brandon  
+lastname - Sanderson  
+totalprice - 100  
+depositpaid - true  
+checkin - 2025-01-01  
+checkout - 2026-01-01  
+additionalneeds - books  
+ 
+**Request structure:**
+
+Endpoint https://restful-booker.herokuapp.com/booking
+
+Request Body
+```json
+{
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
+}
+```
+
+Response Body
+```json
+{
+  "bookingid": 1, // number
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
+}
+```
+
+**Steps:**
+|   #   | Step | Expected result |
+|:-----------|-----------|-----------|
+| 1  | Send POST request  /booking/ with test data in request body  | Request is sent.  |
+| 2  | Check code status  | HTTP Status 400 Bad Request  |
+| 3  | Check struture of response body | Response body contains expected keys.  |
+
+**Postcondition:**  
+Delete the booking
+
+
+**Tags:** automated
+
+**Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
+
+**Created by:** Buha Andrii
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
+<br>
+
+### ID: SWAT-34354 - Title: Create booking: firstname field validation
 
 **Priority:** P2
 
@@ -140,9 +541,16 @@ Response Body
 
 **Created by:** Buha Andrii
 
+<br>
+<br>
+
 ---
 
-### ID: SWAT-34355 - Title: Create booking with invalid lastname key
+<br>
+<br>
+<br>
+
+### ID: SWAT-34355 - Title: Create booking: lastname field validation
 
 **Priority:** P2
 
@@ -213,10 +621,18 @@ Response Body
 
 **Created by:** Buha Andrii
 
----
-### ID: SWAT-34356 - Title: Create booking with invalid totalprice key
+<br>
+<br>
 
-**Priority:** P1
+---
+
+<br>
+<br>
+<br>
+
+### ID: SWAT-34356 - Title: Create booking: totalprice field validation
+
+**Priority:** P2
 
 **Precondition:**  
 
@@ -288,9 +704,16 @@ Response Body
 
 **Created by:** Buha Andrii
 
+<br>
+<br>
+
 ---
 
-### ID: SWAT-34357 - Title: Create booking with invalid depositpaid key
+<br>
+<br>
+<br>
+
+### ID: SWAT-34357 - Title: Create booking: depositpaid field validation
 
 **Priority:** P2
 
@@ -364,9 +787,16 @@ Response Body
 
 **Created by:** Buha Andrii
 
+<br>
+<br>
+
 ---
 
-### ID: SWAT-34358 - Title: Create booking with invalid checkin key
+<br>
+<br>
+<br>
+
+### ID: SWAT-34358 - Title: Create booking: checkin field validation
 
 **Priority:** P2
 
@@ -441,9 +871,16 @@ Response Body
 
 **Created by:** Buha Andrii
 
+<br>
+<br>
+
 ---
 
-### ID: SWAT-34359 - Title: Create booking with invalid checkout key
+<br>
+<br>
+<br>
+
+### ID: SWAT-34359 - Title: Create booking: checkout field validation
 
 **Priority:** P2
 
@@ -519,7 +956,14 @@ Response Body
 
 **Created by:** Buha Andrii
 
+<br>
+<br>
+
 ---
+
+<br>
+<br>
+<br>
 
 ### ID: SWAT-34359 - Title: Create booking with checkin date that is later than checkout date
 
@@ -588,7 +1032,14 @@ Response Body
 
 **Created by:** Buha Andrii
 
+<br>
+<br>
+
 ---
+
+<br>
+<br>
+<br>
 
 ### ID: SWAT-34359 - Title: Create booking with empty request body
 
