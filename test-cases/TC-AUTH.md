@@ -111,7 +111,6 @@ Response Body
 
 <br>
 
-
 ## Negative
 
 <br>
@@ -418,3 +417,436 @@ Request Body
 
 **Created by:** Buha Andrii
 
+# Authorization (Token Usage)
+
+## Positive
+
+### ID: SWAT-33928 - Title: PUT with valid token  
+
+**Priority:** P1
+
+**Precondition:**  
+Authorize as admin  
+Create booking with valid data  
+
+**Test data:**    
+firstname - Name  
+lastname - Last  
+totalprice - 1   
+depositpaid - fasle  
+checkin - 2028-01-01  
+checkout - 2028-01-01  
+additionalneeds - Wifi  
+ 
+**Request structure:**
+
+Endpoint https://restful-booker.herokuapp.com/booking/id
+
+Request Body
+```json
+{
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
+}
+```
+
+Response Body
+```json
+{
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string, */"
+}
+```
+
+**Steps:**
+|   #   | Step | Expected result |
+|:-----------|-----------|-----------|
+| 1  | Send PUT request  /booking/id with test data in request body  | Request is sent.  |
+| 2  | Check code status  | HTTP Status 200 OK  |
+| 3  | Check response body  | Data is updated  |
+
+
+**Postcondition:**  
+Delete the booking
+
+
+**Tags:** automated
+
+**Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
+
+**Created by:** Buha Andrii
+
+<br>
+
+##
+
+<br>
+<br>
+
+### ID: SWAT-33928 - Title: PATCH with valid token  
+
+**Priority:** P1
+
+**Precondition:**  
+Authorize as admin  
+Create booking with valid data  
+
+**Test data:**    
+firstname - Name  
+ 
+**Request structure:**
+
+Endpoint https://restful-booker.herokuapp.com/booking/id
+
+Request Body
+```json
+{
+  "firstname": "/* string */",
+}
+```
+
+Response Body
+```json
+{
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string, */"
+}
+```
+
+**Steps:**
+|   #   | Step | Expected result |
+|:-----------|-----------|-----------|
+| 1  | Send PATCH request  /booking/id with test data in request body  | Request is sent.  |
+| 2  | Check code status  | HTTP Status 200 OK  |
+| 3  | Check response body  | Data is updated  |
+
+
+**Postcondition:**  
+Delete the booking
+
+
+**Tags:** automated
+
+**Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
+
+**Created by:** Buha Andrii
+
+<br>
+
+##
+
+<br>
+<br>
+
+### ID: SWAT-33928 - Title: DELETE  with valid token  
+
+**Priority:** P1
+
+**Precondition:**  
+Authorize as admin  
+Create booking with valid data  
+
+**Test data:**    
+ 
+**Request structure:**
+
+Endpoint https://restful-booker.herokuapp.com/booking/id
+
+
+
+**Steps:**
+|   #   | Step | Expected result |
+|:-----------|-----------|-----------|
+| 1  | Send DELETE  request  /booking/id with test data in request body  | Request is sent.  |
+| 2  | Check code status  | HTTP Status 204 No Content  |
+| 3  | Check response body  | Booking is deleted  |
+
+
+**Postcondition:**  -
+
+**Tags:** automated
+
+**Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
+
+**Created by:** Buha Andrii
+
+<br>
+
+## Negative
+
+<br>
+<br>
+
+### ID: SWAT-33928 - Title: PUT without token 
+
+**Priority:** P1
+
+**Precondition:**  
+Create booking with valid data  
+
+**Test data:**    
+firstname - Name  
+lastname - Last  
+totalprice - 1   
+depositpaid - fasle  
+checkin - 2028-01-01  
+checkout - 2028-01-01  
+additionalneeds - Wifi  
+ 
+**Request structure:**
+
+Endpoint https://restful-booker.herokuapp.com/booking/id
+
+Request Body
+```json
+{
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */"
+}
+```
+
+
+**Steps:**
+|   #   | Step | Expected result |
+|:-----------|-----------|-----------|
+| 1  | Send PUT request  /booking/id with test data in request body  | Request is sent.  |
+| 2  | Check code status  | HTTP Status 403 Forbidden  |
+
+
+**Postcondition:**  
+Delete the booking
+
+
+**Tags:** automated
+
+**Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
+
+**Created by:** Buha Andrii
+
+<br>
+
+## 
+
+<br>
+<br>
+
+### ID: SWAT-33928 - Title: PATCH without token 
+
+**Priority:** P1
+
+**Precondition:**  
+Create booking with valid data  
+
+**Test data:**    
+firstname - Name  
+
+ 
+**Request structure:**
+
+Endpoint https://restful-booker.herokuapp.com/booking/id
+
+Request Body
+```json
+{
+  "firstname": "/* string */",
+}
+```
+
+
+
+
+**Steps:**
+|   #   | Step | Expected result |
+|:-----------|-----------|-----------|
+| 1  | Send PATCH request  /booking/id with test data in request body  | Request is sent.  |
+| 2  | Check code status  | HTTP Status 403 Forbidden  |
+
+
+**Postcondition:**  
+Delete the booking
+
+
+**Tags:** automated
+
+**Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
+
+**Created by:** Buha Andrii
+
+<br>
+
+## 
+
+<br>
+<br>
+
+### ID: SWAT-33928 - Title: DELETE without token 
+
+**Priority:** P1
+
+**Precondition:**  
+Create booking with valid data  
+
+**Test data:**    -
+ 
+**Request structure:**
+
+Endpoint https://restful-booker.herokuapp.com/booking/id
+
+
+
+**Steps:**
+|   #   | Step | Expected result |
+|:-----------|-----------|-----------|
+| 1  | Send DELETE request  /booking/id with test data in request body  | Request is sent.  |
+| 2  | Check code status  | HTTP Status 403 Forbidden  |
+
+
+**Postcondition:**  
+Delete the booking
+
+
+**Tags:** automated
+
+**Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
+
+**Created by:** Buha Andrii
+
+
+<br>
+
+## 
+
+<br>
+<br>
+
+### ID: SWAT-33928 - Title: PUT with invalid token
+
+**Priority:** P1
+
+**Precondition:**  
+Create booking with valid data  
+
+**Test data:**   
+token = wrong-token
+ 
+**Request structure:**
+
+Endpoint https://restful-booker.herokuapp.com/booking/id
+
+
+**Steps:**
+|   #   | Step | Expected result |
+|:-----------|-----------|-----------|
+| 1  | Send PUT request  /booking/id with test data in request body  | Request is sent.  |
+| 2  | Check code status  | HTTP Status 403 Forbidden  |
+
+
+**Postcondition:**  -
+
+**Tags:** automated
+
+**Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
+
+**Created by:** Buha Andrii
+
+<br>
+
+## 
+
+<br>
+<br>
+
+### ID: SWAT-33928 - Title: PATCH with invalid token
+
+**Priority:** P1
+
+**Precondition:**  
+Create booking with valid data  
+
+**Test data:**   
+token = wrong-token
+ 
+**Request structure:**
+
+Endpoint https://restful-booker.herokuapp.com/booking/id
+
+
+**Steps:**
+|   #   | Step | Expected result |
+|:-----------|-----------|-----------|
+| 1  | Send PATCH  request  /booking/id with test data in request body  | Request is sent.  |
+| 2  | Check code status  | HTTP Status 403 Forbidden  |
+
+
+**Postcondition:**  -
+
+**Tags:** automated
+
+**Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
+
+**Created by:** Buha Andrii
+
+<br>
+
+## 
+
+<br>
+<br>
+
+### ID: SWAT-33928 - Title: DELETE with invalid token
+
+**Priority:** P1
+
+**Precondition:**  
+Create booking with valid data  
+
+**Test data:**   
+token = wrong-token
+ 
+**Request structure:**
+
+Endpoint https://restful-booker.herokuapp.com/booking/id
+
+
+**Steps:**
+|   #   | Step | Expected result |
+|:-----------|-----------|-----------|
+| 1  | Send DELETE request  /booking/id with test data in request body  | Request is sent.  |
+| 2  | Check code status  | HTTP Status 403 Forbidden  |
+
+
+**Postcondition:**  -
+
+**Tags:** automated
+
+**Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
+
+**Created by:** Buha Andrii
