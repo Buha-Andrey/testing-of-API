@@ -1048,7 +1048,9 @@ Delete booking
 
 <br>
 <br>
+
 ---
+
 <br>
 <br>
 <br>
