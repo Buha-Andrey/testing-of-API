@@ -11,6 +11,7 @@ Server is active
 **Test data:**  
 username - admin  
 password - password123  
+Content-Type: application/json  
 
 **Request structure:**  
 
@@ -42,6 +43,7 @@ Response Body
 | 2  | Check code status  | HTTP Status 200 OK  |
 | 3  | Check structure of response body  | Response body contains expected key. |
 | 4  | Check token  | Token value is not empty.   |
+| 5  | Check Content-Type Header  | Content-Type is application/json   |
 
 
 **Tags:** automated
