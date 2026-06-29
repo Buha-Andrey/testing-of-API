@@ -59,7 +59,7 @@ Response Body
 
 
 
-### ID: SWAT-33928 - Title: POST /auth generates unique token on each request
+### ID: SWAT-33929 - Title: POST /auth generates unique token on each request
 **Priority:** P1
 
 **Precondition:**   
@@ -117,7 +117,7 @@ Response Body
 <br>
 
 
-### ID: SWAT-33929 - Title: Authentication fails with incorrect password
+### ID: SWAT-33930 - Title: Authentication fails with incorrect password
 
 **Priority:** P2
 
@@ -171,7 +171,7 @@ Response Body
 <br>
 
 
-### ID: SWAT-33930 - Title: Authentication fails with incorrect username
+### ID: SWAT-33931 - Title: Authentication fails with incorrect username
 
 **Priority:** P2
 
@@ -223,7 +223,7 @@ Response Body
 <br>
 <br>
 
-### ID: SWAT-33931 - Title: Authentication  with empty username
+### ID: SWAT-33932 - Title: Authentication  with empty username
 
 **Priority:** P2
 
@@ -275,7 +275,7 @@ Response Body
 <br>
 <br>
 
-### ID: SWAT-33932 - Title: Authentication with empty password
+### ID: SWAT-33933 - Title: Authentication with empty password
 
 **Priority:** P2
 
@@ -328,7 +328,7 @@ Response Body
 <br>
 <br>
 
-### ID: SWAT-33932 - Title: Authentication without header Content-Type
+### ID: SWAT-33934 - Title: Authentication without header Content-Type
 
 **Priority:** P2
 
@@ -376,7 +376,7 @@ Request Body
 <br>
 <br>
 
-### ID: SWAT-33932 - Title: Authentication with invalid value of Content-Type header
+### ID: SWAT-33935 - Title: Authentication with invalid value of Content-Type header
 
 **Priority:** P2
 
@@ -421,7 +421,7 @@ Request Body
 
 ## Positive
 
-### ID: SWAT-33928 - Title: PUT with valid token  
+### ID: SWAT-33936 - Title: PUT with valid token  
 
 **Priority:** P1
 
@@ -497,7 +497,7 @@ Delete the booking
 <br>
 <br>
 
-### ID: SWAT-33928 - Title: PATCH with valid token  
+### ID: SWAT-33937 - Title: PATCH with valid token  
 
 **Priority:** P1
 
@@ -559,7 +559,7 @@ Delete the booking
 <br>
 <br>
 
-### ID: SWAT-33928 - Title: DELETE  with valid token  
+### ID: SWAT-33938 - Title: DELETE  with valid token  
 
 **Priority:** P1
 
@@ -598,7 +598,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 <br>
 <br>
 
-### ID: SWAT-33928 - Title: PUT without token 
+### ID: SWAT-33939 - Title: PUT without token 
 
 **Priority:** P1
 
@@ -658,7 +658,7 @@ Delete the booking
 <br>
 <br>
 
-### ID: SWAT-33928 - Title: PATCH without token 
+### ID: SWAT-33940 - Title: PATCH without token 
 
 **Priority:** P1
 
@@ -707,7 +707,7 @@ Delete the booking
 <br>
 <br>
 
-### ID: SWAT-33928 - Title: DELETE without token 
+### ID: SWAT-33941 - Title: DELETE without token 
 
 **Priority:** P1
 
@@ -747,7 +747,7 @@ Delete the booking
 <br>
 <br>
 
-### ID: SWAT-33928 - Title: PUT with invalid token
+### ID: SWAT-33942 - Title: PUT with invalid token
 
 **Priority:** P1
 
@@ -784,7 +784,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 <br>
 <br>
 
-### ID: SWAT-33928 - Title: PATCH with invalid token
+### ID: SWAT-33943 - Title: PATCH with invalid token
 
 **Priority:** P1
 
@@ -821,7 +821,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 <br>
 <br>
 
-### ID: SWAT-33928 - Title: DELETE with invalid token
+### ID: SWAT-33944 - Title: DELETE with invalid token
 
 **Priority:** P1
 
