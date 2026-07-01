@@ -111,53 +111,6 @@ Response Body
 
 **Created by:** Buha Andrii
 
-<br>
-
-##
-
-<br>
-<br>
-
-### ID: SWAT-33935 - Title: Authentication with valid credentials in XML request body format
-
-**Priority:** P2
-
-**Precondition:** -
-
-**Test data:**  
-Content-Type : application/xml
-
-| username | password | 
-|----------|----------|
-| admin | password123  | 
-
-**Request structure:**
-
-Endpoint https://restful-booker.herokuapp.com/auth
-
-Request Body
-```xml
-<auth>
-    <username>admin</username>
-    <password>password123</password>
-</auth>
-```
-
-
-**Steps:**
-|   #   | Step | Expected result |
-|:-----------|-----------|-----------|
-| 1  | Send POST request /auth | Request is sent.  |
-| 2  | Check code status  | HTTP Status 200 OK  |
-| 3  | Check structure of response body  | XML schema is correct: key and type |
-
-
-
-**Tags:** automated
-
-**Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
-
-**Created by:** Buha Andrii
 
 <br>
 
