@@ -16,7 +16,6 @@ Negative
 3. Authentication with empty username  
 4. Authentication with empty password  
 5. Authentication without header Content-Type  
-6. Authentication with invalid value of Content-Type header
 
 ***Authorization (Token Usage)***
 
