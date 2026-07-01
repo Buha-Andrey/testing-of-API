@@ -225,7 +225,7 @@ Response Body
 <br>
 <br>
 
-### ID: SWAT-33932 - Title: Authentication  with empty username
+### ID: SWAT-33932 - Title: Authentication: username field validation
 
 **Priority:** P2
 
@@ -235,7 +235,7 @@ Response Body
 
 | username | password | 
 |----------|----------|
-| (empty) | password123 | 
+| - | password123 | 
 
 **Request structure:**
 
@@ -258,10 +258,15 @@ Response Body
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send POST request /auth | Request is sent.  |
-| 2  | Check code status  | HTTP Status 400 Bad Request  |
-| 3  | Check structure of response body  | JSON schema is correct: key and type |
-| 4  | Check token | Token is missed. Authentication is failed |
+| 1  | Send POST request  /auth with "username": "" | Request is sent.  |
+| 2  | Check code status  | HTTP Status 401 Unauthorized  |
+| 3  | Send POST request  /auth with "username": 100 | Request is sent.  |
+| 4  | Check code status  | HTTP Status 400 Bad Request  |
+| 5  | Send POST request  /auth with "username": null | Request is sent.  |
+| 6  | Check code status  | HTTP Status 400 Bad Request  |
+| 7  | Send POST request  /auth without key-value pair username | Request is sent.  |
+| 8 | Check code status  | HTTP Status 400 Bad Request  |
+
 
 
 **Tags:** automated
@@ -277,7 +282,7 @@ Response Body
 <br>
 <br>
 
-### ID: SWAT-33933 - Title: Authentication with empty password
+### ID: SWAT-33933 - Title: Authentication: password field validation 
 
 **Priority:** P2
 
@@ -287,7 +292,7 @@ Response Body
 
 | username | password | 
 |----------|----------|
-| admin | (empty)  | 
+| admin |  - | 
 
 **Request structure:**
 
@@ -310,10 +315,14 @@ Response Body
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send POST request /auth | Request is sent.  |
-| 2  | Check code status  | HTTP Status 400 Bad Request  |
-| 3  | Check structure of response body  | JSON schema is correct: key and type |
-| 4  | Check token | Token is missed. Authentication is failed |
+| 1  | Send POST request  /auth with "password": "" | Request is sent.  |
+| 2  | Check code status  | HTTP Status 401 Unauthorized  |
+| 3  | Send POST request  /auth with "password": 100 | Request is sent.  |
+| 4  | Check code status  | HTTP Status 400 Bad Request  |
+| 5  | Send POST request  /auth with "password": null | Request is sent.  |
+| 6  | Check code status  | HTTP Status 400 Bad Request  |
+| 7  | Send POST request  /auth without key-value pair password | Request is sent.  |
+| 8 | Check code status  | HTTP Status 400 Bad Request  |
 
 
 **Tags:** automated
