@@ -390,8 +390,8 @@ Request Body
 **Priority:** P1
 
 **Precondition:**  
-Authorize as admin  
-Create booking with valid data  
+Authorize as admin  and save token
+Create booking with valid data  and save booking ID
 
 **Test data:**    
 firstname - Name  
@@ -401,6 +401,7 @@ depositpaid - fasle
 checkin - 2028-01-01  
 checkout - 2028-01-01  
 additionalneeds - Wifi  
+Cookie: token={{token}}  
  
 **Request structure:**
 
