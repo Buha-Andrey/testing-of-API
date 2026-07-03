@@ -385,13 +385,13 @@ Request Body
 
 ## Positive
 
-### ID: SWAT-33936 - Title: PUT with valid token  
+### ID: SWAT-33936 - Title: Authorization: PUT with valid token  
 
 **Priority:** P1
 
 **Precondition:**  
-Authorize as admin  and save token
-Create booking with valid data  and save booking ID
+Authorize as admin  and save token  
+Create booking with valid data  and save booking ID  
 
 **Test data:**    
 firstname - Name  
