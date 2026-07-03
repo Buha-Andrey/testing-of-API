@@ -398,7 +398,7 @@ firstname - Name
 lastname - Last  
 totalprice - 1   
 depositpaid - fasle  
-checkin - 2028-01-01  
+checkin - 2027-01-01  
 checkout - 2028-01-01  
 additionalneeds - Wifi  
 Cookie: token={{token}}  
@@ -462,7 +462,7 @@ Delete the booking
 <br>
 <br>
 
-### ID: SWAT-33937 - Title: PATCH with valid token  
+### ID: SWAT-33937 - Title: Authorization: PATCH with valid token  
 
 **Priority:** P1
 
@@ -472,6 +472,8 @@ Create booking with valid data
 
 **Test data:**    
 firstname - Name  
+Cookie: token={{token}}  
+ 
  
 **Request structure:**
 
@@ -524,7 +526,7 @@ Delete the booking
 <br>
 <br>
 
-### ID: SWAT-33938 - Title: DELETE  with valid token  
+### ID: SWAT-33938 - Title: Authorization: DELETE with valid token  
 
 **Priority:** P1
 
@@ -532,7 +534,9 @@ Delete the booking
 Authorize as admin  
 Create booking with valid data  
 
-**Test data:**    
+**Test data:**  
+Cookie: token={{token}}  
+     
  
 **Request structure:**
 
@@ -545,7 +549,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 |:-----------|-----------|-----------|
 | 1  | Send DELETE  request  /booking/id with test data in request body  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 204 No Content  |
-| 3  | Check response body  | Booking is deleted  |
+| 3  | Check deleted booking  | Booking is deleted  |
 
 
 **Postcondition:**  -
@@ -563,7 +567,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 <br>
 <br>
 
-### ID: SWAT-33939 - Title: PUT without token 
+### ID: SWAT-33939 - Title: Authorization: PUT without token 
 
 **Priority:** P1
 
@@ -575,7 +579,7 @@ firstname - Name
 lastname - Last  
 totalprice - 1   
 depositpaid - fasle  
-checkin - 2028-01-01  
+checkin - 2027-01-01  
 checkout - 2028-01-01  
 additionalneeds - Wifi  
  
@@ -606,9 +610,7 @@ Request Body
 | 2  | Check code status  | HTTP Status 403 Forbidden  |
 
 
-**Postcondition:**  
-Delete the booking
-
+**Postcondition:**  -
 
 **Tags:** automated
 
@@ -623,7 +625,7 @@ Delete the booking
 <br>
 <br>
 
-### ID: SWAT-33940 - Title: PATCH without token 
+### ID: SWAT-33940 - Title: Authorization: PATCH without token 
 
 **Priority:** P1
 
@@ -655,8 +657,7 @@ Request Body
 | 2  | Check code status  | HTTP Status 403 Forbidden  |
 
 
-**Postcondition:**  
-Delete the booking
+**Postcondition:**  -
 
 
 **Tags:** automated
@@ -672,7 +673,7 @@ Delete the booking
 <br>
 <br>
 
-### ID: SWAT-33941 - Title: DELETE without token 
+### ID: SWAT-33941 - Title: Authorization: DELETE without token 
 
 **Priority:** P1
 
@@ -694,8 +695,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 | 2  | Check code status  | HTTP Status 403 Forbidden  |
 
 
-**Postcondition:**  
-Delete the booking
+**Postcondition:**  -
 
 
 **Tags:** automated
@@ -712,7 +712,7 @@ Delete the booking
 <br>
 <br>
 
-### ID: SWAT-33942 - Title: PUT with invalid token
+### ID: SWAT-33942 - Title: Authorization: PUT with invalid token
 
 **Priority:** P1
 
@@ -720,7 +720,7 @@ Delete the booking
 Create booking with valid data  
 
 **Test data:**   
-token = wrong-token
+Cookie: token=wrong-token  
  
 **Request structure:**
 
@@ -749,7 +749,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 <br>
 <br>
 
-### ID: SWAT-33943 - Title: PATCH with invalid token
+### ID: SWAT-33943 - Title: Authorization: PATCH with invalid token
 
 **Priority:** P1
 
@@ -757,7 +757,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 Create booking with valid data  
 
 **Test data:**   
-token = wrong-token
+Cookie: token=wrong-token  
  
 **Request structure:**
 
@@ -786,7 +786,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 <br>
 <br>
 
-### ID: SWAT-33944 - Title: DELETE with invalid token
+### ID: SWAT-33944 - Title: Authorization: DELETE with invalid token
 
 **Priority:** P1
 
@@ -794,7 +794,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 Create booking with valid data  
 
 **Test data:**   
-token = wrong-token
+Cookie: token=wrong-token  
  
 **Request structure:**
 
