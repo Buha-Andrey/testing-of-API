@@ -1,3 +1,5 @@
+## Positive
+
 ### ID: SWAT-34333 - Title: Get list of booking ids 
 
 **Priority:** P1
@@ -40,11 +42,9 @@ Response Body
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
@@ -99,11 +99,9 @@ Delete test booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
@@ -159,11 +157,9 @@ Delete test booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
