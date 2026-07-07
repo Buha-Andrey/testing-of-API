@@ -1,6 +1,6 @@
 ## Positive
 
-### ID: SWAT-34333 - Title: Get list of booking ids 
+### ID: SWAT-33950 - Title: Get list of booking ids 
 
 **Priority:** P1
 
@@ -48,7 +48,7 @@ Response Body
 <br>
 <br>
 
-### ID: SWAT-34334 - Title: Filter booking by firstname, lastname, checkin, checkout
+### ID: SWAT-33951 - Title: Filter booking by firstname, lastname, checkin, checkout
 
 **Priority:** P1
 
@@ -105,7 +105,7 @@ Delete test booking
 <br>
 <br>
 
-### ID: SWAT-34335 - Title: Boundary value analysis of checkin date 
+### ID: SWAT-33952 - Title: Boundary value analysis of checkin date 
 **Priority:** P1
 
 **Precondition:**   
@@ -163,7 +163,7 @@ Delete test booking
 <br>
 <br>
 
-### ID: SWAT-34336 - Title: Boundary value analysis of checkout date
+### ID: SWAT-33953 - Title: Boundary value analysis of checkout date
 **Priority:** P1
 
 **Precondition:**  
