@@ -138,3 +138,10 @@ Positive
 Negative
 1. Delete non-existent booking
 2. Delete booking: ID parameter validation 
+
+
+
+
+
+Bugs:
+SWAT-33951 - Filter booking by firstname, lastname, checkin, checkout - 
