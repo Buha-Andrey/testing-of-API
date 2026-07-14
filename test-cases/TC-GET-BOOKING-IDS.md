@@ -31,8 +31,8 @@ Response Body
 |:-----------|-----------|-----------|
 | 1  | Send GET request /booking  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 200 OK  |
-| 3  | Check struture of response body | Response body contains "bookingid" and its value. "bookingid" is shown in each element. |
-| 4  | Check bookingid type | "bookingid" is a number |
+| 3  | Check struture of response body | Response body is an array of objects. Every object contains "bookingid" and its value. |
+| 4  | Check bookingid  | "bookingid" is a number. "bookingid" is unique.|
 
 
 **Tags:** automated
