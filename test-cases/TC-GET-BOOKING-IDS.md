@@ -139,10 +139,13 @@ Response Body
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send GET request /booking?firstname=RestfulBooker&lastname=Test&checkin=2026-01-01   | Request is sent.  |
+| 1  | Send GET request /booking?firstname=RestfulBooker&lastname=Test&checkin=2025-12-31   | Request is sent.  |
 | 2  | Check code status  | HTTP Status 200 OK  |
 | 3  | Check response body  | Response body contains "bookingid" and its value.  |
-| 4  | Send GET request /booking?firstname=RestfulBooker&lastname=Test&checkin=2025-12-31   | Request is sent.  |
+| 4  | Send GET request /booking?firstname=RestfulBooker&lastname=Test&checkin=2026-01-01   | Request is sent.  |
+| 2  | Check code status  | HTTP Status 200 OK  |
+| 3  | Check response body  | Response body contains "bookingid" and its value.   |
+| 4  | Send GET request /booking?firstname=RestfulBooker&lastname=Test&checkin=2026-01-02   | Request is sent.  |
 | 2  | Check code status  | HTTP Status 200 OK  |
 | 3  | Check response body  | Response body returns empty array.  |
 
