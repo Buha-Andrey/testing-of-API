@@ -143,11 +143,11 @@ Response Body
 | 2  | Check code status  | HTTP Status 200 OK  |
 | 3  | Check response body  | Response body contains "bookingid" and its value.  |
 | 4  | Send GET request /booking?firstname=RestfulBooker&lastname=Test&checkin=2026-01-01   | Request is sent.  |
-| 2  | Check code status  | HTTP Status 200 OK  |
-| 3  | Check response body  | Response body contains "bookingid" and its value.   |
-| 4  | Send GET request /booking?firstname=RestfulBooker&lastname=Test&checkin=2026-01-02   | Request is sent.  |
-| 2  | Check code status  | HTTP Status 200 OK  |
-| 3  | Check response body  | Response body returns empty array.  |
+| 5  | Check code status  | HTTP Status 200 OK  |
+| 6  | Check response body  | Response body contains "bookingid" and its value.   |
+| 7  | Send GET request /booking?firstname=RestfulBooker&lastname=Test&checkin=2026-01-02   | Request is sent.  |
+| 8  | Check code status  | HTTP Status 200 OK  |
+| 9  | Check response body  | Response body returns empty array.  |
 
 
 **Postcondition:**  
@@ -200,12 +200,15 @@ Response Body
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send GET request /booking?firstname=RestfulBooker&lastname=Test&checkout=2025-12-31   | Request is sent.  |
+| 1  | Send GET request /booking?firstname=RestfulBooker&lastname=Test&checkout=2025-12-30   | Request is sent.  |
 | 2  | Check code status  | HTTP Status 200 OK  |
 | 3  | Check response body  | Response body contains "bookingid" and its value.  |
-| 4  | Send GET request /booking?firstname=RestfulBooker&lastname=Test&checkin=2026-01-01   | Request is sent.  |
-| 2  | Check code status  | HTTP Status 200 OK  |
-| 3  | Check response body  | Response body returns empty array.  |
+| 4  | Send GET request /booking?firstname=RestfulBooker&lastname=Test&checkout=2026-12-31   | Request is sent.  |
+| 5  | Check code status  | HTTP Status 200 OK  |
+| 6  | Check response body  | Response body contains "bookingid" and its value.   |
+| 7  | Send GET request /booking?firstname=RestfulBooker&lastname=Test&checkout=2026-01-01   | Request is sent.  |
+| 8  | Check code status  | HTTP Status 200 OK  |
+| 9  | Check response body  | Response body returns empty array.  |
 
 
 **Postcondition:**  
