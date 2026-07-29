@@ -1,4 +1,6 @@
-### ID: SWAT-34343 - Title: Get booking with existing valid ID 
+## Positive
+
+### ID: SWAT-33960 - Title: Get booking with existing valid ID 
 
 **Priority:** P1
 
@@ -48,16 +50,14 @@ Response Body
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
 
-### ID: SWAT-34343 - Title: Get booking with existing valid ID in xml format
+### ID: SWAT-33961 - Title: Get booking with existing valid ID in xml format
 
 **Priority:** P1
 
@@ -107,15 +107,13 @@ Response Body
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+## Negative
 
-<br>
 <br>
 <br>
 
-### ID: SWAT-34343 - Title: Get booking without header Accept  
+### ID: SWAT-33962 - Title: Get booking without header Accept  
 
 **Priority:** P3
 
@@ -163,15 +161,13 @@ Response Body
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-### ID: SWAT-34343 - Title: Get booking with non-existent valid ID
+### ID: SWAT-33963 - Title: Get booking with non-existent valid ID
 
 **Priority:** P2
 
@@ -213,15 +209,13 @@ Response Body
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-### ID: SWAT-34344 - Title: Get booking: ID parameter validation
+### ID: SWAT-33964 - Title: Get booking: ID parameter validation
 
 **Priority:** P2
 
