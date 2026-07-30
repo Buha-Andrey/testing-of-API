@@ -43,6 +43,9 @@ Response Body
 | 4  | Check every key type | Every key has expected type of value |
 
 
+**Postcondition:**  
+Delete test booking 
+
 **Tags:** automated
 
 **Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
@@ -99,6 +102,8 @@ Response Body
 | 3  | Check struture of response body | Response body contains expected keys.  |
 | 4  | Check every key type | Every key has expected type of value |
 
+**Postcondition:**  
+Delete test booking 
 
 **Tags:** automated
 
@@ -152,7 +157,10 @@ Response Body
 |:-----------|-----------|-----------|
 | 1  | Send GET request  /booking/id  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 400 Bad Request |
-| 3  | Check struture of response body | Response body contains expected keys.  |
+| 3  | Check structure of response body | Response body contains expected keys.  |
+
+**Postcondition:**  
+Delete test booking 
 
 **Tags:** automated
 
