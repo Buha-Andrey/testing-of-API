@@ -1,6 +1,6 @@
 ## Positive
 
-### ID: SWAT-34353 - Title: Create booking: all fields with valid data
+### ID: SWAT-33970 - Title: Create booking: all fields with valid data
 
 **Priority:** P0
 
@@ -77,7 +77,7 @@ Delete the booking
 <br>
 
 
-### ID: SWAT-34353 - Title: POST /booking creates unique booking on each request
+### ID: SWAT-33971 - Title: POST /booking creates unique booking on each request
 
 **Priority:** P2
 
@@ -155,7 +155,7 @@ Delete the bookings
 <br>
 
 
-### ID: SWAT-34353 - Title: Create booking with header Accept: application/xml
+### ID: SWAT-33972 - Title: Create booking with header Accept: application/xml
 
 **Priority:** P1
 
@@ -231,7 +231,7 @@ Delete the booking
 <br>
 <br>
 
-### ID: SWAT-34353 - Title: Create booking without header Content-Type
+### ID: SWAT-33973 - Title: Create booking without header Content-Type
 
 **Priority:** P2
 
@@ -308,7 +308,7 @@ Delete the booking
 <br>
 <br>
 
-### ID: SWAT-34353 - Title: Create booking without header Accept 
+### ID: SWAT-33974 - Title: Create booking without header Accept 
 
 **Priority:** P2
 
@@ -383,7 +383,7 @@ Delete the booking
 <br>
 <br>
 
-### ID: SWAT-34353 - Title: Create booking with invalid value of Content-Type header
+### ID: SWAT-33975 - Title: Create booking with invalid value of Content-Type header
 
 **Priority:** P2
 
@@ -458,7 +458,7 @@ Delete the booking
 <br>
 <br>
 
-### ID: SWAT-34354 - Title: Create booking: firstname field validation
+### ID: SWAT-33976 - Title: Create booking: firstname field validation
 
 **Priority:** P2
 
@@ -537,7 +537,7 @@ Response Body
 <br>
 <br>
 
-### ID: SWAT-34355 - Title: Create booking: lastname field validation
+### ID: SWAT-33977 - Title: Create booking: lastname field validation
 
 **Priority:** P2
 
@@ -615,7 +615,7 @@ Response Body
 <br>
 <br>
 
-### ID: SWAT-34356 - Title: Create booking: totalprice field validation
+### ID: SWAT-33978 - Title: Create booking: totalprice field validation
 
 **Priority:** P2
 
@@ -696,7 +696,7 @@ Response Body
 <br>
 <br>
 
-### ID: SWAT-34357 - Title: Create booking: depositpaid field validation
+### ID: SWAT-33979 - Title: Create booking: depositpaid field validation
 
 **Priority:** P2
 
@@ -777,7 +777,7 @@ Response Body
 <br>
 <br>
 
-### ID: SWAT-34358 - Title: Create booking: checkin field validation
+### ID: SWAT-33980 - Title: Create booking: checkin field validation
 
 **Priority:** P2
 
@@ -859,7 +859,7 @@ Response Body
 <br>
 <br>
 
-### ID: SWAT-34359 - Title: Create booking: checkout field validation
+### ID: SWAT-33981 - Title: Create booking: checkout field validation
 
 **Priority:** P2
 
@@ -942,7 +942,7 @@ Response Body
 <br>
 <br>
 
-### ID: SWAT-34359 - Title: Create booking with checkin date that is later than checkout date
+### ID: SWAT-33982 - Title: Create booking with checkin date that is later than checkout date
 
 **Priority:** P2
 
@@ -1016,7 +1016,7 @@ Response Body
 <br>
 <br>
 
-### ID: SWAT-34359 - Title: Create booking with empty request body
+### ID: SWAT-33983 - Title: Create booking with empty request body
 
 **Priority:** P2
 
