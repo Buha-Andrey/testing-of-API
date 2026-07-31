@@ -1,8 +1,10 @@
+## Positive
+
 ### ID: SWAT-34353 - Title: Create booking: all fields with valid data
 
 **Priority:** P0
 
-**Precondition:**  
+**Precondition:**  -
  
 **Test data:**   
 Accept: application/json  
@@ -59,21 +61,18 @@ Response Body
 | 4  | Check every key type | Every key matches expected type |
 
 **Postcondition:**  
-Delete the booking
+Delete the booking  
 
-
-**Tags:** automated
+**Tags:** automated  
 
 **Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
 
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
@@ -149,11 +148,9 @@ Delete the bookings
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
@@ -228,11 +225,9 @@ Delete the booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+## Negative
 
-<br>
 <br>
 <br>
 
@@ -307,11 +302,9 @@ Delete the booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
@@ -384,11 +377,9 @@ Delete the booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
@@ -461,11 +452,9 @@ Delete the booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
@@ -542,11 +531,9 @@ Response Body
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
@@ -622,11 +609,9 @@ Response Body
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
@@ -705,11 +690,9 @@ Response Body
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
@@ -788,11 +771,9 @@ Response Body
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
@@ -872,11 +853,9 @@ Response Body
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
@@ -957,11 +936,9 @@ Response Body
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
@@ -1033,11 +1010,9 @@ Response Body
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
