@@ -1,4 +1,6 @@
-### ID: SWAT-31353 - Title: Update booking: all fields with valid data
+## Positive
+
+### ID: SWAT-33990 - Title: Update booking: all fields with valid data
 
 **Priority:** P1
 
@@ -68,16 +70,14 @@ Delete the booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
 
-### ID: SWAT-31354 - Title: Update booking with header Accept: application/xml
+### ID: SWAT-33991 - Title: Update booking with header Accept: application/xml
 
 **Priority:** P1
 
@@ -150,16 +150,13 @@ Delete the booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+## Negative
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31355 - Title: Update non-existent booking
+### ID: SWAT-33992 - Title: Update non-existent booking
 
 **Priority:** P1
 
@@ -222,16 +219,13 @@ Response Body
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31356 - Title: Update booking without header Content-Type
+### ID: SWAT-33993 - Title: Update booking without header Content-Type
 
 **Priority:** P1
 
@@ -304,16 +298,13 @@ Delete booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31357 - Title: Update booking without header Accept 
+### ID: SWAT-33994 - Title: Update booking without header Accept 
 
 **Priority:** P1
 
@@ -386,16 +377,13 @@ Delete booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31358 - Title: Update booking with invalid value of Content-Type header
+### ID: SWAT-33995 - Title: Update booking with invalid value of Content-Type header
 
 **Priority:** P1
 
@@ -470,16 +458,13 @@ Delete booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31359 - Title: Update booking: firstname field validation
+### ID: SWAT-33996 - Title: Update booking: firstname field validation
 
 **Priority:** P2
 
@@ -555,16 +540,13 @@ Delete booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31360 - Title: Update booking: lastname  field validation
+### ID: SWAT-33997 - Title: Update booking: lastname  field validation
 
 **Priority:** P2
 
@@ -640,16 +622,13 @@ Delete booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31361 - Title: Update booking: totalprice field validation
+### ID: SWAT-33998 - Title: Update booking: totalprice field validation
 
 **Priority:** P2
 
@@ -725,16 +704,13 @@ Delete booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31362 - Title: Update booking: depositpaid field validation
+### ID: SWAT-33999 - Title: Update booking: depositpaid field validation
 
 **Priority:** P2
 
@@ -811,16 +787,13 @@ Delete booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31362 - Title: Update booking: checkin field validation
+### ID: SWAT-34000 - Title: Update booking: checkin field validation
 
 **Priority:** P2
 
@@ -898,16 +871,13 @@ Delete booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31363 - Title: Update booking: checkout field validation
+### ID: SWAT-34001 - Title: Update booking: checkout field validation
 
 **Priority:** P2
 
@@ -983,11 +953,3 @@ Delete booking
 **Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
 
 **Created by:** Buha Andrii
-
-<br>
-<br>
----
-<br>
-<br>
-<br>
-
