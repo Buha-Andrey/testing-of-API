@@ -684,7 +684,7 @@ Response Body
 |:-----------|-----------|-----------|
 | 1  | Send PUT request  /booking/id without totalprice field  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 400 Bad Request  |
-| 3  | Send PUT request  /booking/id with  totalprice  = 1  | Request is sent.  |
+| 3  | Send PUT request  /booking/id with  totalprice  = -1  | Request is sent.  |
 | 4  | Check code status  | HTTP Status 422 Unprocessable Entity  |
 | 5  | Send PUT request  /booking/id with  totalprice  = 0  | Request is sent.  |
 | 6  | Check code status  | HTTP Status 422 Unprocessable Entity  |
