@@ -1,4 +1,6 @@
- ### ID: SWAT-31353 - Title: Partial update: firstname field with valid data
+## Positive
+
+### ID: SWAT-34010 - Title: Partial update: firstname field with valid data
 
 **Priority:** P1
 
@@ -57,15 +59,13 @@ Delete the booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
- ### ID: SWAT-31353 - Title: Partial update: lastname field with valid data
+ ### ID: SWAT-34011 - Title: Partial update: lastname field with valid data
 
 **Priority:** P1
 
@@ -123,16 +123,13 @@ Delete the booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31353 - Title: Partial update: totalprice field with valid data
+### ID: SWAT-34012 - Title: Partial update: totalprice field with valid data
 
 **Priority:** P1
 
@@ -190,17 +187,13 @@ Delete the booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-
-### ID: SWAT-31353 - Title: Partial update: depositpaid field with valid data
+### ID: SWAT-34013 - Title: Partial update: depositpaid field with valid data
 
 **Priority:** P1
 
@@ -258,17 +251,13 @@ Delete the booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-
-### ID: SWAT-31353 - Title: Partial update: checkin field with valid data
+### ID: SWAT-34014 - Title: Partial update: checkin field with valid data
 
 **Priority:** P1
 
@@ -329,17 +318,13 @@ Delete the booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-
-### ID: SWAT-31353 - Title: Partial update: checkout field with valid data
+### ID: SWAT-34015 - Title: Partial update: checkout field with valid data
 
 **Priority:** P1
 
@@ -401,17 +386,13 @@ Delete the booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-
-### ID: SWAT-31354 - Title: Partial update booking with header Accept: application/xml
+### ID: SWAT-34016 - Title: Partial update booking with header Accept: application/xml
 
 **Priority:** P1
 
@@ -471,16 +452,13 @@ Delete the booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+## Negative
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31355 - Title: Partial update non-existent booking
+### ID: SWAT-34017 - Title: Partial update non-existent booking
 
 **Priority:** P1
 
@@ -521,16 +499,13 @@ Request Body
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31356 - Title: Partial update booking without header Content-Type
+### ID: SWAT-34018 - Title: Partial update booking without header Content-Type
 
 **Priority:** P3
 
@@ -572,16 +547,13 @@ Request Body
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31357 - Title: Partial update booking without header Accept
+### ID: SWAT-34019 - Title: Partial update booking without header Accept
 
 **Priority:** P3
 
@@ -624,16 +596,13 @@ Delete booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31358 - Title: Partial update booking with invalid value of Content-Type header
+### ID: SWAT-34020 - Title: Partial update booking with invalid value of Content-Type header
 
 **Priority:** P3
 
@@ -677,16 +646,13 @@ Delete booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31359 - Title: Partial update booking: firstname field validation
+### ID: SWAT-34021 - Title: Partial update booking: firstname field validation
 
 **Priority:** P2
 
@@ -737,16 +703,13 @@ Delete booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31360 - Title: Partial update booking: lastname field validation
+### ID: SWAT-34022 - Title: Partial update booking: lastname field validation
 
 **Priority:** P2
 
@@ -798,16 +761,13 @@ Delete booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31361 - Title: Partial update booking: totalprice field validation
+### ID: SWAT-34023 - Title: Partial update booking: totalprice field validation
 
 **Priority:** P2
 
@@ -858,16 +818,13 @@ Delete booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31362 - Title: Partial update booking: depositpaid field validation
+### ID: SWAT-34024 - Title: Partial update booking: depositpaid field validation
 
 **Priority:** P2
 
@@ -919,16 +876,13 @@ Delete booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31362 - Title: Partial update booking: checkin field validation
+### ID: SWAT-34025 - Title: Partial update booking: checkin field validation
 
 **Priority:** P2
 
@@ -984,16 +938,13 @@ Delete booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31363 - Title: Partial update booking: checkout field validation
+### ID: SWAT-34026 - Title: Partial update booking: checkout field validation
 
 **Priority:** P2
 
@@ -1047,15 +998,13 @@ Delete booking
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+##
 
-<br>
 <br>
 <br>
 
-### ID: SWAT-31363 - Title: Partial update booking with empty request body
+### ID: SWAT-34026 - Title: Partial update booking with empty request body
 
 **Priority:** P2
 
