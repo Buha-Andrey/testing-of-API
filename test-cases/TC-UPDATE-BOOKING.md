@@ -206,7 +206,7 @@ Response Body
 |:-----------|-----------|-----------|
 | 1  | Send PUT request  /booking/id with test data in request body  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 404 Not Found  |
-| 3  | Check structure  of response body | Response body contains expected keys.  |
+| 3  | Check structure  of response body | Response body contains text "Not Found"  |
 
 **Postcondition:**  
 
@@ -284,7 +284,7 @@ Response Body
 |:-----------|-----------|-----------|
 | 1  | Send PUT request  /booking/id with test data in request body  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 400 Bad Request  |
-| 3  | Check structure  of response body | Response body contains expected keys.  |
+| 3  | Check structure  of response body | Response body contains text "Bad Request"  |
 
 
 **Postcondition:**  
@@ -363,7 +363,7 @@ Response Body
 |:-----------|-----------|-----------|
 | 1  | Send PUT request  /booking/id with test data in request body  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 400 Bad Request  |
-| 3  | Check structure  of response body | Response body contains expected keys.  |
+| 3  | Check structure  of response body | Response body contains text "Bad Request"  |
 
 
 **Postcondition:**  
@@ -444,7 +444,7 @@ Response Body
 |:-----------|-----------|-----------|
 | 1  | Send PUT request  /booking/id with test data in request body  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 400 Bad Request  |
-| 3  | Check structure  of response body | Response body contains expected keys.  |
+| 3  | Check structure  of response body | Response body contains text "Bad Request"  |
 
 
 **Postcondition:**    
@@ -857,8 +857,8 @@ Response Body
 | 8  | Check code status  | HTTP Status 422 Unprocessable Entity  |
 | 9  | Send PUT request  /booking/id with  checkin  = "2018-13-32"  | Request is sent.  |
 | 10  | Check code status  | HTTP Status 422 Unprocessable Entity  |
-| 9  | Send PUT request  /booking/id with  checkin  = null  | Request is sent.  |
-| 10  | Check code status  | HTTP Status 400 Bad Request  |
+| 11  | Send PUT request  /booking/id with  checkin  = null  | Request is sent.  |
+| 12  | Check code status  | HTTP Status 400 Bad Request  |
 
 **Postcondition:**  
 Delete booking
@@ -941,8 +941,8 @@ Response Body
 | 8  | Check code status  | HTTP Status 422 Unprocessable Entity  |
 | 9  | Send PUT request  /booking/id with  checkout  = "2018-13-32"  | Request is sent.  |
 | 10  | Check code status  | HTTP Status 422 Unprocessable Entity  |
-| 9  | Send PUT request  /booking/id with  checkout  = null  | Request is sent.  |
-| 10  | Check code status  | HTTP Status 400 Bad Request  |
+| 11  | Send PUT request  /booking/id with  checkout  = null  | Request is sent.  |
+| 12  | Check code status  | HTTP Status 400 Bad Request  |
 
 **Postcondition:**  
 Delete booking
