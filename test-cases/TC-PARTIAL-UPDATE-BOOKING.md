@@ -1004,7 +1004,7 @@ Delete booking
 <br>
 <br>
 
-### ID: SWAT-34026 - Title: Partial update booking with empty request body
+### ID: SWAT-34027 - Title: Partial update booking with empty request body
 
 **Priority:** P2
 
