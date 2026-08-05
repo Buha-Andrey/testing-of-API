@@ -732,8 +732,7 @@ Response Body
 | 1  | Send PUT request  /booking/id with test data in request body  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 200 OK  |
 
-**Postcondition:**  
--
+**Postcondition:**  -
 
 **Tags:** automated
 
