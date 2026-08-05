@@ -20,7 +20,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 |:-----------|-----------|-----------|
 | 1  | Send DELETE request  /booking/id  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 204 No Content  |
-| 3  | Check structure  of response body | Response body contains expected keys.  |
+| 3  | Check structure  of response body | Response body contains text `No Content`  |
 
 
 
