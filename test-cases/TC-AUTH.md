@@ -401,7 +401,7 @@ depositpaid - fasle
 checkin - 2027-01-01  
 checkout - 2028-01-01  
 additionalneeds - Wifi  
-Cookie: token={{token}}  
+Cookie: {{token}}  
  
 **Request structure:**
 
@@ -471,7 +471,7 @@ Create booking with valid data
 
 **Test data:**    
 firstname - Name  
-Cookie: token={{token}}  
+Cookie: {{token}}  
  
  
 **Request structure:**
@@ -533,7 +533,7 @@ Authorize as admin
 Create booking with valid data  
 
 **Test data:**  
-Cookie: token={{token}}  
+Cookie: {{token}}  
      
  
 **Request structure:**
