@@ -901,6 +901,8 @@ Create booking with valid data
 
 **Test data:**   
 Cookie: token=wrong-token  
+Authorization: Basic wrong-token   
+
  
 **Request structure:**
 
@@ -910,8 +912,10 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send PUT request  /booking/id with test data in request body  | Request is sent.  |
+| 1  | Send PUT request  /booking/id with invalid token in Cookie header  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 403 Forbidden  |
+| 3  | Send PUT request  /booking/id with invalid token in Authorization header  | Request is sent.  |
+| 4  | Check code status  | HTTP Status 403 Forbidden  |
 
 
 **Postcondition:**  -
@@ -938,6 +942,7 @@ Create booking with valid data
 
 **Test data:**   
 Cookie: token=wrong-token  
+Authorization: Basic wrong-token   
  
 **Request structure:**
 
@@ -947,8 +952,10 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send PATCH  request  /booking/id with test data in request body  | Request is sent.  |
+| 1  | Send PATCH request  /booking/id with invalid token in Cookie header  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 403 Forbidden  |
+| 3  | Send PATCH request  /booking/id with invalid token in Authorization header  | Request is sent.  |
+| 4  | Check code status  | HTTP Status 403 Forbidden  |
 
 
 **Postcondition:**  -
@@ -975,6 +982,7 @@ Create booking with valid data
 
 **Test data:**   
 Cookie: token=wrong-token  
+Authorization: Basic wrong-token   
  
 **Request structure:**
 
@@ -984,8 +992,10 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send DELETE request  /booking/id with test data in request body  | Request is sent.  |
+| 1  | Send DELETE request  /booking/id with invalid token in Cookie header  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 403 Forbidden  |
+| 3  | Send DELETE request  /booking/id with invalid token in Authorization header  | Request is sent.  |
+| 4  | Check code status  | HTTP Status 403 Forbidden  |
 
 
 **Postcondition:**  -
