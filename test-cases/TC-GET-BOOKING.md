@@ -157,7 +157,7 @@ Response Body
 |:-----------|-----------|-----------|
 | 1  | Send GET request  /booking/id  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 400 Bad Request |
-| 3  | Check structure of response body | Response body contains expected keys.  |
+| 3  | Check structure of response body | Response body contains text 'Bad Request'   |
 
 **Postcondition:**  
 Delete test booking 
@@ -208,7 +208,7 @@ Response Body
 |:-----------|-----------|-----------|
 | 1  | Send GET request  /booking/id  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 404 Not Found |
-| 3  | Check struture of response body | Response body contains expected keys.  |
+| 3  | Check structure of response body | Response body contains text 'Not Found'  |
 
 **Tags:** automated
 
@@ -247,7 +247,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 | 6  | Check response body  | Error message is returned.  |
 | 7  | Send GET request /booking/qwerty  | Request is sent.  |
 | 8  | Check code status  | HTTP Status 400 Bad Request  |
-| 9  | Check response body  | Error message is returned.  |
+| 9  | Check response body  | Error message is returned.   |
 
 
 **Postcondition:**  -
