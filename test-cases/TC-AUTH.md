@@ -787,7 +787,7 @@ Request Body
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
 | 1  | Send PUT request  /booking/id with test data in request body  | Request is sent.  |
-| 2  | Check code status  | HTTP Status 403 Forbidden  |
+| 2  | Check code status  | HTTP Status 403 Forbidden. Authorization is failed  |
 
 
 **Postcondition:**  -
@@ -834,7 +834,7 @@ Request Body
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
 | 1  | Send PATCH request  /booking/id with test data in request body  | Request is sent.  |
-| 2  | Check code status  | HTTP Status 403 Forbidden  |
+| 2  | Check code status  | HTTP Status 403 Forbidden. Authorization is failed  |
 
 
 **Postcondition:**  -
@@ -872,7 +872,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
 | 1  | Send DELETE request  /booking/id with test data in request body  | Request is sent.  |
-| 2  | Check code status  | HTTP Status 403 Forbidden  |
+| 2  | Check code status  | HTTP Status 403 Forbidden. Authorization is failed  |
 
 
 **Postcondition:**  -
@@ -913,9 +913,9 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
 | 1  | Send PUT request  /booking/id with invalid token in Cookie header  | Request is sent.  |
-| 2  | Check code status  | HTTP Status 403 Forbidden  |
+| 2  | Check code status  | HTTP Status 403 Forbidden. Authorization is failed  |
 | 3  | Send PUT request  /booking/id with invalid token in Authorization header  | Request is sent.  |
-| 4  | Check code status  | HTTP Status 403 Forbidden  |
+| 4  | Check code status  | HTTP Status 403 Forbidden. Authorization is failed |
 
 
 **Postcondition:**  -
@@ -953,9 +953,9 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
 | 1  | Send PATCH request  /booking/id with invalid token in Cookie header  | Request is sent.  |
-| 2  | Check code status  | HTTP Status 403 Forbidden  |
+| 2  | Check code status  | HTTP Status 403 Forbidden. Authorization is failed  |
 | 3  | Send PATCH request  /booking/id with invalid token in Authorization header  | Request is sent.  |
-| 4  | Check code status  | HTTP Status 403 Forbidden  |
+| 4  | Check code status  | HTTP Status 403 Forbidden. Authorization is failed  |
 
 
 **Postcondition:**  -
@@ -993,9 +993,9 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
 | 1  | Send DELETE request  /booking/id with invalid token in Cookie header  | Request is sent.  |
-| 2  | Check code status  | HTTP Status 403 Forbidden  |
+| 2  | Check code status  | HTTP Status 403 Forbidden. Authorization is failed  |
 | 3  | Send DELETE request  /booking/id with invalid token in Authorization header  | Request is sent.  |
-| 4  | Check code status  | HTTP Status 403 Forbidden  |
+| 4  | Check code status  | HTTP Status 403 Forbidden. Authorization is failed  |
 
 
 **Postcondition:**  -
