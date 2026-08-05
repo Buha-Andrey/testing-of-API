@@ -141,6 +141,7 @@ Create booking with valid data
 Content-Type: application/json  
 Accept: application/json  
 totalprice - 1   
+totalprice - 2.5   
  
 **Request structure:**
 
@@ -171,10 +172,14 @@ Response Body
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send PATCH request /booking/id with test data in request body  | Request is sent.  |
+| 1  | Send PATCH request /booking/id with totalprice = integer number in request body  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 200 OK  |
 | 3  | Check structure  of response body | Response body contains expected keys.  |
 | 4  | Check value of keys | Value is changed to updated data |
+| 5  | Send PATCH request /booking/id with totalprice = float number in request body  | Request is sent.  |
+| 6  | Check code status  | HTTP Status 200 OK  |
+| 7  | Check structure  of response body | Response body contains expected keys.  |
+| 8  | Check value of keys | Value is changed to updated data |
 
 **Postcondition:**  
 Delete the booking
