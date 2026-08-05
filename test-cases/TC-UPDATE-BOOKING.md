@@ -477,6 +477,7 @@ Create booking with valid data
 firstname - ""  
 firstname - 69  
 firstname - null  
+firstname - { Object }  
 
 
 
@@ -526,6 +527,8 @@ Response Body
 | 6  | Check code status  | HTTP Status 400 Bad Request  |
 | 7  | Send PUT request  /booking/id with  firstname = null  | Request is sent.  |
 | 8  | Check code status  | HTTP Status 400 Bad Request  |
+| 9  | Send PUT request  /booking/id with  firstname =  { Object }  | Request is sent.  |
+| 10  | Check code status  | HTTP Status 400 Bad Request  |
 
 
 
@@ -559,6 +562,7 @@ Create booking with valid data
 lastname  - ""  
 lastname  - 69  
 lastname  - null  
+lastname - { Object }  
 
 
 
@@ -608,6 +612,8 @@ Response Body
 | 6  | Check code status  | HTTP Status 400 Bad Request  |
 | 7  | Send PUT request  /booking/id with  lastname  = null  | Request is sent.  |
 | 8  | Check code status  | HTTP Status 400 Bad Request  |
+| 9  | Send PUT request  /booking/id with  lastname =  { Object }  | Request is sent.  |
+| 10 | Check code status  | HTTP Status 400 Bad Request  |
 
 
 
@@ -641,6 +647,7 @@ Create booking with valid data
 totalprice  - -1  
 totalprice  - 0  
 totalprice  - "qwerty"  
+totalprice - { Object }  
 
 
 
@@ -690,6 +697,8 @@ Response Body
 | 6  | Check code status  | HTTP Status 422 Unprocessable Entity  |
 | 7  | Send PUT request  /booking/id with  totalprice  = "qwerty"  | Request is sent.  |
 | 8  | Check code status  | HTTP Status 400 Bad Request  |
+| 9  | Send PUT request  /booking/id with  totalprice =  { Object }  | Request is sent.  |
+| 10 | Check code status  | HTTP Status 400 Bad Request  |
 
 
 
@@ -723,7 +732,9 @@ Create booking with valid data
 depositpaid  - -1  
 depositpaid  - 0  
 depositpaid  - "0"  
-depositpaid - null  
+depositpaid - null
+depositpaid - { Object }  
+
 
 
 **Request structure:**
@@ -773,7 +784,9 @@ Response Body
 | 7  | Send PUT request  /booking/id with  depositpaid  = "0"  | Request is sent.  |
 | 8  | Check code status  | HTTP Status 400 Bad Request  |
 | 9  | Send PUT request  /booking/id with  depositpaid  = null  | Request is sent.  |
-| 10  | Check code status  | HTTP Status 400 Bad Request  |
+| 10 | Check code status  | HTTP Status 400 Bad Request  |
+| 11 | Send PUT request  /booking/id with  depositpaid =  { Object }  | Request is sent.  |
+| 12 | Check code status  | HTTP Status 400 Bad Request  |
 
 
 **Postcondition:**  
@@ -808,6 +821,8 @@ checkin - "qwerty"
 checkin - "2018"  
 checkin - "2018-13-32"  
 checkin - null  
+checkin - { Object }  
+
 
 **Request structure:**
 
@@ -859,6 +874,8 @@ Response Body
 | 10  | Check code status  | HTTP Status 422 Unprocessable Entity  |
 | 11  | Send PUT request  /booking/id with  checkin  = null  | Request is sent.  |
 | 12  | Check code status  | HTTP Status 400 Bad Request  |
+| 13 | Send PUT request  /booking/id with  checkin =  { Object }  | Request is sent.  |
+| 14 | Check code status  | HTTP Status 400 Bad Request  |
 
 **Postcondition:**  
 Delete booking
@@ -892,6 +909,8 @@ checkout - "qwerty"
 checkout - "2018"  
 checkout - "2018-13-32"  
 checkout - null  
+checkout - { Object }  
+
 
 **Request structure:**
 
@@ -943,6 +962,8 @@ Response Body
 | 10  | Check code status  | HTTP Status 422 Unprocessable Entity  |
 | 11  | Send PUT request  /booking/id with  checkout  = null  | Request is sent.  |
 | 12  | Check code status  | HTTP Status 400 Bad Request  |
+| 13 | Send PUT request  /booking/id with  checkout =  { Object }  | Request is sent.  |
+| 14 | Check code status  | HTTP Status 400 Bad Request  |
 
 **Postcondition:**  
 Delete booking
