@@ -1,4 +1,6 @@
-### ID: SWAT-31353 - Title: Delete existing booking
+## Positive
+
+### ID: SWAT-34030 - Title: Delete existing booking
 
 **Priority:** P1
 
@@ -29,16 +31,13 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+## Negative
 
-<br>
 <br>
 <br>
 
-
-### ID: SWAT-31353 - Title: Delete non-existent booking
+### ID: SWAT-34031 - Title: Delete non-existent booking
 
 **Priority:** P2
 
@@ -69,15 +68,13 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 **Created by:** Buha Andrii
 
 <br>
-<br>
 
----
+## 
 
-<br>
 <br>
 <br>
 
-### ID: SWAT-31353 - Title: Delete booking: ID parameter validation
+### ID: SWAT-34032 - Title: Delete booking: ID parameter validation
 
 **Priority:** P2
 
@@ -110,12 +107,3 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 **Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
 
 **Created by:** Buha Andrii
-
-<br>
-<br>
-
----
-
-<br>
-<br>
-<br>
