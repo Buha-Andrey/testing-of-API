@@ -57,7 +57,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 |:-----------|-----------|-----------|
 | 1  | Send DELETE request  /booking/id  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 404 Not Found |
-| 3  | Check structure  of response body | Error message is returned. |
+| 3  | Check structure  of response body | Response body contains text `Not Found` |
 
 
 
