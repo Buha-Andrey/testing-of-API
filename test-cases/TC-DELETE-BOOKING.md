@@ -107,3 +107,41 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 **Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
 
 **Created by:** Buha Andrii
+
+<br>
+
+## 
+
+<br>
+<br>
+
+### ID: SWAT-34033 - Title: Delete same booking twice in a row
+
+**Priority:** P2
+
+**Precondition:**  
+Authorize as admin  
+Create booking with valid data  
+
+**Test data:**    
+
+**Request structure:**
+
+Endpoint https://restful-booker.herokuapp.com/booking/id
+
+
+**Steps:**
+|   #   | Step | Expected result |
+|:-----------|-----------|-----------|
+| 1  | Send DELETE request  /booking/id  | Request is sent.  |
+| 2  | Check code status  | HTTP Status 204 No Content  |
+| 3  | Check structure  of response body | Response body contains text `No Content`  |
+| 4  | Send DELETE request  /booking/id  | Request is sent.  |
+| 5  | Check code status  | HTTP Status 404 Not Found |
+| 6  | Check response body  | Response body contains text `Not Found`  |
+
+**Tags:** automated
+
+**Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
+
+**Created by:** Buha Andrii
