@@ -632,12 +632,123 @@ Delete the booking
 
 <br>
 
+##
+
+<br>
+<br>
+
+### ID: SWAT-33940 - Title: Authorization: PATCH with valid token through Authorization header  
+
+**Priority:** P1
+
+**Precondition:**  
+Create booking with valid data  and save booking ID  
+
+**Test data:**    
+firstname - Name  
+Authorization: Basic YWRtaW46cGFzc3dvcmQxMjM=
+ 
+**Request structure:**
+
+Endpoint https://restful-booker.herokuapp.com/booking/id
+
+Request Body
+```json
+{
+  "firstname": "/* string */"
+}
+```
+
+Response Body
+```json
+{
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */" 
+}
+```
+
+**Steps:**
+|   #   | Step | Expected result |
+|:-----------|-----------|-----------|
+| 1  | Send PUT request  /booking/id with test data in request body  | Request is sent.  |
+| 2  | Check code status  | HTTP Status 200 OK  |
+
+**Postcondition:**  
+Delete the booking 
+
+**Tags:** automated
+
+**Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
+
+**Created by:** Buha Andrii
+
+<br>
+
+##
+
+<br>
+<br>
+
+### ID: SWAT-33941 - Title: Authorization: DELETE with valid token through Authorization header  
+
+**Priority:** P1
+
+**Precondition:**  
+Create booking with valid data  and save booking ID  
+
+**Test data:**    
+Authorization: Basic YWRtaW46cGFzc3dvcmQxMjM=
+ 
+**Request structure:**
+
+Endpoint https://restful-booker.herokuapp.com/booking/id
+
+
+Response Body
+```json
+{
+  "firstname": "/* string */",
+  "lastname": "/* string */",
+  "totalprice": 100,  // number
+  "depositpaid": true,  // boolean
+  "bookingdates": {
+    "checkin": "2026-06-20",  // date,  CCYY-MM-DD
+    "checkout": "2026-06-25"  // date,  CCYY-MM-DD
+  },
+  "additionalneeds": "/* string */" 
+}
+```
+
+**Steps:**
+|   #   | Step | Expected result |
+|:-----------|-----------|-----------|
+| 1  | Send PUT request  /booking/id with test data in request body  | Request is sent.  |
+| 2  | Check code status  | HTTP Status 200 OK  |
+
+**Postcondition:**  
+-
+
+**Tags:** automated
+
+**Additional info:** https://restful-booker.herokuapp.com/apidoc/index.html
+
+**Created by:** Buha Andrii
+
+<br>
+
 ## Negative
 
 <br>
 <br>
 
-### ID: SWAT-33939 - Title: Authorization: PUT without token 
+### ID: SWAT-33942 - Title: Authorization: PUT without token 
 
 **Priority:** P1
 
@@ -695,7 +806,7 @@ Request Body
 <br>
 <br>
 
-### ID: SWAT-33940 - Title: Authorization: PATCH without token 
+### ID: SWAT-33943 - Title: Authorization: PATCH without token 
 
 **Priority:** P1
 
@@ -743,7 +854,7 @@ Request Body
 <br>
 <br>
 
-### ID: SWAT-33941 - Title: Authorization: DELETE without token 
+### ID: SWAT-33944 - Title: Authorization: DELETE without token 
 
 **Priority:** P1
 
@@ -782,7 +893,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 <br>
 <br>
 
-### ID: SWAT-33942 - Title: Authorization: PUT with invalid token
+### ID: SWAT-33945 - Title: Authorization: PUT with invalid token
 
 **Priority:** P1
 
@@ -819,7 +930,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 <br>
 <br>
 
-### ID: SWAT-33943 - Title: Authorization: PATCH with invalid token
+### ID: SWAT-33946 - Title: Authorization: PATCH with invalid token
 
 **Priority:** P1
 
@@ -856,7 +967,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 <br>
 <br>
 
-### ID: SWAT-33944 - Title: Authorization: DELETE with invalid token
+### ID: SWAT-33947 - Title: Authorization: DELETE with invalid token
 
 **Priority:** P1
 
