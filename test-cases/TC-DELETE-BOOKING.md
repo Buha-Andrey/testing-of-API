@@ -93,13 +93,13 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 |:-----------|-----------|-----------|
 | 1  | Send DELETE request /booking/0  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 404 Not Found  |
-| 3  | Check response body  | Error message is returned.  |
+| 3  | Check response body  | Response body contains text `Not Found`  |
 | 4  | Send DELETE request /booking/-10  | Request is sent.  |
 | 5  | Check code status  | HTTP Status 404 Not Found |
-| 6  | Check response body  | Error message is returned.  |
+| 6  | Check response body  | Response body contains text `Not Found`  |
 | 7  | Send DELETE request /booking/qwerty  | Request is sent.  |
 | 8  | Check code status  | HTTP Status 400 Bad Request  |
-| 9  | Check response body  | Error message is returned.  |
+| 9  | Check response body  | Response body contains text `Bad Request`  |
 
 
 **Tags:** automated
