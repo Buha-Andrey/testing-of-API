@@ -436,7 +436,7 @@ Response Body
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send PUT request  /booking/id with test data in request body  | Request is sent.  |
+| 1  | Send PATCH request  /booking/id with test data in request body  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 200 OK  |
 | 3  | Check structure  of response body | Respons body is present in XML format. Response body contains expected keys.  |
 | 4  | Check value of keys | Value is changed to updated data |
@@ -484,9 +484,9 @@ Request Body
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send PUT request  /booking/id with test data in request body  | Request is sent.  |
+| 1  | Send PATCH request  /booking/id with test data in request body  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 404 Not Found  |
-| 3  | Check structure  of response body | Response body contains expected keys.  |
+| 3  | Check structure  of response body | Response body contains text `Not Found`  |
 
 **Postcondition:**  
 
@@ -532,9 +532,9 @@ Request Body
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send PUT request  /booking/id with test data in request body  | Request is sent.  |
+| 1  | Send PATCH request  /booking/id with test data in request body  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 400 Bad Request  |
-| 3  | Check structure  of response body | Response body contains expected keys.  |
+| 3  | Check structure  of response body | Response body contains text `Bad Request`  |
 
 
 **Postcondition:**  
@@ -580,9 +580,9 @@ Request Body
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send PUT request  /booking/id with test data in request body  | Request is sent.  |
+| 1  | Send PATCH request  /booking/id with test data in request body  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 400 Bad Request  |
-| 3  | Check structure  of response body | Response body contains expected keys.  |
+| 3  | Check structure  of response body | Response body contains text `Bad Request`  |
 
 
 **Postcondition:**  
@@ -630,9 +630,9 @@ Request Body
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send PUT request  /booking/id with test data in request body  | Request is sent.  |
+| 1  | Send PATCH request  /booking/id with test data in request body  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 400 Bad Request  |
-| 3  | Check structure  of response body | Response body contains expected keys.  |
+| 3  | Check structure  of response body | Response body contains text `Bad Request`  |
 
 
 **Postcondition:**    
@@ -665,6 +665,8 @@ Create booking with valid data
 firstname - ""  
 firstname - 69  
 firstname - null  
+firstname - { object }  
+
 
 
 
@@ -683,12 +685,14 @@ Request Body
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send PUT request  /booking/id with  firstname = ""  | Request is sent.  |
+| 1  | Send PATCH request  /booking/id with  firstname = ""  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 422 Unprocessable Entity  |
-| 3  | Send PUT request  /booking/id with  firstname = 69  | Request is sent.  |
+| 3  | Send PATCH request  /booking/id with  firstname = 69  | Request is sent.  |
 | 4  | Check code status  | HTTP Status 400 Bad Request  |
-| 5  | Send PUT request  /booking/id with  firstname = null  | Request is sent.  |
+| 5  | Send PATCH request  /booking/id with  firstname = null  | Request is sent.  |
 | 6  | Check code status  | HTTP Status 400 Bad Request  |
+| 7  | Send PATCH request  /booking/id with  firstname = { object }  | Request is sent.  |
+| 8  | Check code status  | HTTP Status 400 Bad Request  |
 
 
 
@@ -722,6 +726,7 @@ Create booking with valid data
 lastname  - ""  
 lastname  - 69  
 lastname  - null  
+lastname - { object }  
 
 
 
@@ -741,12 +746,14 @@ Request Body
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send PUT request  /booking/id with  lastname  = ""  | Request is sent.  |
+| 1  | Send PATCH request  /booking/id with  lastname  = ""  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 422 Unprocessable Entity  |
-| 3  | Send PUT request  /booking/id with  lastname  = 69  | Request is sent.  |
+| 3  | Send PATCH request  /booking/id with  lastname  = 69  | Request is sent.  |
 | 4  | Check code status  | HTTP Status 400 Bad Request  |
-| 5  | Send PUT request  /booking/id with  lastname  = null  | Request is sent.  |
+| 5  | Send PATCH request  /booking/id with  lastname  = null  | Request is sent.  |
 | 6  | Check code status  | HTTP Status 400 Bad Request  |
+| 7  | Send PATCH request  /booking/id with  lastname = { object }  | Request is sent.  |
+| 8  | Check code status  | HTTP Status 400 Bad Request  |
 
 
 
@@ -780,6 +787,7 @@ Create booking with valid data
 totalprice  - -1  
 totalprice  - 0  
 totalprice  - "qwerty"  
+totalprice - { object }  
 
 
 
@@ -798,12 +806,14 @@ Request Body
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send PUT request  /booking/id with  totalprice  = 1  | Request is sent.  |
+| 1  | Send PATCH request  /booking/id with  totalprice  = 1  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 422 Unprocessable Entity  |
-| 3  | Send PUT request  /booking/id with  totalprice  = 0  | Request is sent.  |
+| 3  | Send PATCH request  /booking/id with  totalprice  = 0  | Request is sent.  |
 | 4  | Check code status  | HTTP Status 422 Unprocessable Entity  |
-| 5  | Send PUT request  /booking/id with  totalprice  = "qwerty"  | Request is sent.  |
+| 5  | Send PATCH request  /booking/id with  totalprice  = "qwerty"  | Request is sent.  |
 | 6  | Check code status  | HTTP Status 400 Bad Request  |
+| 7  | Send PATCH request  /booking/id with  totalprice = { object }  | Request is sent.  |
+| 8  | Check code status  | HTTP Status 400 Bad Request  |
 
 
 
@@ -838,6 +848,8 @@ depositpaid  - -1
 depositpaid  - 0  
 depositpaid  - "0"  
 depositpaid - null  
+depositpaid - { object }  
+
 
 
 **Request structure:**
@@ -855,14 +867,16 @@ Request Body
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send PUT request  /booking/id with  depositpaid  = -1  | Request is sent.  |
+| 1  | Send PATCH request  /booking/id with  depositpaid  = -1  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 400 Bad Request  |
-| 3  | Send PUT request  /booking/id with  depositpaid  = 0  | Request is sent.  |
+| 3  | Send PATCH request  /booking/id with  depositpaid  = 0  | Request is sent.  |
 | 4  | Check code status  | HTTP Status 400 Bad Request  |
-| 5  | Send PUT request  /booking/id with  depositpaid  = "0"  | Request is sent.  |
+| 5  | Send PATCH request  /booking/id with  depositpaid  = "0"  | Request is sent.  |
 | 6  | Check code status  | HTTP Status 400 Bad Request  |
-| 7  | Send PUT request  /booking/id with  depositpaid  = null  | Request is sent.  |
+| 7  | Send PATCH request  /booking/id with  depositpaid  = null  | Request is sent.  |
 | 8  | Check code status  | HTTP Status 400 Bad Request  |
+| 9  | Send PATCH request  /booking/id with  depositpaid = { object }  | Request is sent.  |
+| 10 | Check code status  | HTTP Status 400 Bad Request  |
 
 
 **Postcondition:**  
@@ -897,6 +911,8 @@ checkin - "qwerty"
 checkin - "2018"  
 checkin - "2018-13-32"  
 checkin - null  
+checkin - { object }  
+
 
 **Request structure:**
 
@@ -916,16 +932,18 @@ Request Body
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send PUT request  /booking/id with  checkin  = 1  | Request is sent.  |
+| 1  | Send PATCH request  /booking/id with  checkin  = 1  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 400 Bad Request  |
-| 3  | Send PUT request  /booking/id with  checkin  = "qwerty"  | Request is sent.  |
+| 3  | Send PATCH request  /booking/id with  checkin  = "qwerty"  | Request is sent.  |
 | 4  | Check code status  | HTTP Status 400 Bad Request  |
-| 5  | Send PUT request  /booking/id with  checkin  = "2018"  | Request is sent.  |
+| 5  | Send PATCH request  /booking/id with  checkin  = "2018"  | Request is sent.  |
 | 6  | Check code status  | HTTP Status 422 Unprocessable Entity  |
-| 7  | Send PUT request  /booking/id with  checkin  = "2018-13-32"  | Request is sent.  |
+| 7  | Send PATCH request  /booking/id with  checkin  = "2018-13-32"  | Request is sent.  |
 | 8  | Check code status  | HTTP Status 422 Unprocessable Entity  |
-| 9  | Send PUT request  /booking/id with  checkin  = null  | Request is sent.  |
+| 9  | Send PATCH request  /booking/id with  checkin  = null  | Request is sent.  |
 | 10  | Check code status  | HTTP Status 400 Bad Request  |
+| 11  | Send PATCH request  /booking/id with  checkin = { object }  | Request is sent.  |
+| 12 | Check code status  | HTTP Status 400 Bad Request  |
 
 **Postcondition:**  
 Delete booking
@@ -959,6 +977,8 @@ checkout - "qwerty"
 checkout - "2018"  
 checkout - "2018-13-32"  
 checkout - null  
+checkout - { object }  
+
 
 **Request structure:**
 
@@ -977,16 +997,18 @@ Request Body
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send PUT request  /booking/id with  checkout  = 1  | Request is sent.  |
+| 1  | Send PATCH request  /booking/id with  checkout  = 1  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 400 Bad Request  |
-| 3  | Send PUT request  /booking/id with  checkout  = "qwerty"  | Request is sent.  |
+| 3  | Send PATCH request  /booking/id with  checkout  = "qwerty"  | Request is sent.  |
 | 4  | Check code status  | HTTP Status 400 Bad Request  |
-| 5  | Send PUT request  /booking/id with  checkout  = "2018"  | Request is sent.  |
+| 5  | Send PATCH request  /booking/id with  checkout  = "2018"  | Request is sent.  |
 | 6  | Check code status  | HTTP Status 422 Unprocessable Entity  |
-| 7  | Send PUT request  /booking/id with  checkout  = "2018-13-32"  | Request is sent.  |
+| 7  | Send PATCH request  /booking/id with  checkout  = "2018-13-32"  | Request is sent.  |
 | 8  | Check code status  | HTTP Status 422 Unprocessable Entity  |
-| 9  | Send PUT request  /booking/id with  checkout  = null  | Request is sent.  |
+| 9  | Send PATCH request  /booking/id with  checkout  = null  | Request is sent.  |
 | 10  | Check code status  | HTTP Status 400 Bad Request  |
+| 11  | Send PATCH request  /booking/id with  checkout = { object }  | Request is sent.  |
+| 12 | Check code status  | HTTP Status 400 Bad Request  |
 
 **Postcondition:**  
 Delete booking
@@ -1022,7 +1044,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 **Steps:**
 |   #   | Step | Expected result |
 |:-----------|-----------|-----------|
-| 1  | Send PUT request /booking/id   | Request is sent.  |
+| 1  | Send PATCH request /booking/id   | Request is sent.  |
 | 2  | Check code status  | HTTP Status 400 Bad Request  |
 
 **Postcondition:**  
