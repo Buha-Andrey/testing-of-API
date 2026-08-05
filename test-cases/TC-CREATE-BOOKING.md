@@ -57,8 +57,8 @@ Response Body
 |:-----------|-----------|-----------|
 | 1  | Send POST request  /booking/ with test data in request body  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 201 Created  |
-| 3  | Check struture of response body | Response body contains expected keys.  |
-| 4  | Check every key type | Every key matches expected type |
+| 3  | Check structure of response body | Response body contains expected keys.  |
+| 4  | Check every value data type | Every value data type matches expected data type |
 
 **Postcondition:**  
 Delete the booking  
@@ -84,7 +84,7 @@ Delete the booking
 **Precondition:**  
 
 **Test data:**  
-firstname - Brandon  
+firstname - Brandon   
 lastname - Sanderson  
 totalprice - 100  
 depositpaid - true  
@@ -94,7 +94,7 @@ additionalneeds - books
  
 **Request structure:**
 
-Endpoint https://restful-booker.herokuapp.com/booking
+Endpoint https://restful-booker.herokuapp.com/booking 
 
 Request Body
 ```json
@@ -133,9 +133,9 @@ Response Body
 | 1  | Send POST request  /booking/ with test data in request body  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 201 Created  |
 | 3  | Check created ID  | Response body contains ID.  |
-| 4  | Send the same POST request  /booking/ | Request is sent.  |
+| 4  | Send the same POST request  /booking/ | Request is sent.   |
 | 5  | Check code status  | HTTP Status 201 Created  |
-| 6  | Check created ID  | Response body contains ID. ID of first request differs from ID of second request |
+| 6  | Check created ID  | Response body contains ID. ID of first request differs from ID of second request  |
 
 **Postcondition:**  
 Delete the bookings
@@ -211,8 +211,8 @@ Response Body
 |:-----------|-----------|-----------|
 | 1  | Send POST request  /booking/ with test data in request body  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 201 Created  |
-| 3  | Check struture of response body | Response body is xml. Response body contains expected keys.  |
-| 4  | Check every key type | Every key matches expected type |
+| 3  | Check structure of response body | Response body is xml. Response body contains expected keys.   |
+| 4  | Check every value data type | Every value data type matches expected data type  |
 
 **Postcondition:**  
 Delete the booking
@@ -288,7 +288,7 @@ Response Body
 |:-----------|-----------|-----------|
 | 1  | Send POST request  /booking/ with test data in request body  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 400 Bad Request  |
-| 3  | Check struture of response body | Response body contains expected keys.  |
+| 3  | Check structure of response body | Response body contains text `Bad Request`   |
 
 
 **Postcondition:**  
@@ -364,7 +364,7 @@ Response Body
 |:-----------|-----------|-----------|
 | 1  | Send POST request  /booking/ with test data in request body  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 400 Bad Request  |
-| 3  | Check struture of response body | Response body contains expected keys.  |
+| 3  | Check structure of response body | Response body contains text `Bad Request`   |
 
 **Postcondition:**  
 Delete the booking
@@ -383,7 +383,7 @@ Delete the booking
 <br>
 <br>
 
-### ID: SWAT-33975 - Title: Create booking with invalid value of Content-Type header
+### ID: SWAT-33975 - Title: Create booking with invalid value of Content-Type header 
 
 **Priority:** P2
 
@@ -401,7 +401,7 @@ additionalneeds - books
  
 **Request structure:**
 
-Endpoint https://restful-booker.herokuapp.com/booking
+Endpoint https://restful-booker.herokuapp.com/booking 
 
 Request Body
 ```json
@@ -439,7 +439,7 @@ Response Body
 |:-----------|-----------|-----------|
 | 1  | Send POST request  /booking/ with test data in request body  | Request is sent.  |
 | 2  | Check code status  | HTTP Status 400 Bad Request  |
-| 3  | Check struture of response body | Response body contains expected keys.  |
+| 3  | Check structure of response body | Response body contains text `Bad Request`   |
 
 **Postcondition:**  
 Delete the booking
@@ -519,6 +519,8 @@ Response Body
 | 6  | Check code status  | HTTP Status 400 Bad Request  |
 | 7  | Send POST request  /booking without key-value pair firstname | Request is sent.  |
 | 8 | Check code status  | HTTP Status 400 Bad Request  |
+| 9  | Send POST request  /booking wit "firstname": { object } | Request is sent.  |
+| 10 | Check code status  | HTTP Status 400 Bad Request  |
 
 
 **Postcondition:**  
@@ -597,6 +599,8 @@ Response Body
 | 6  | Check code status  | HTTP Status 400 Bad Request  |
 | 7  | Send POST request  /booking without key-value pair lastname | Request is sent.  |
 | 8 | Check code status  | HTTP Status 400 Bad Request  |
+| 9  | Send POST request  /booking wit "lastname": { object } | Request is sent.  |
+| 10 | Check code status  | HTTP Status 400 Bad Request  |
 
 
 **Postcondition:**  
@@ -678,6 +682,8 @@ Response Body
 | 8 | Check code status  | HTTP Status 400 Bad Request  |
 | 9  | Send POST request  /booking without key-value pair totalprice | Request is sent.  |
 | 10 | Check code status  | HTTP Status 400 Bad Request  |
+| 11 | Send POST request  /booking wit "totalprice": { object } | Request is sent.  |
+| 12 | Check code status  | HTTP Status 400 Bad Request  |
 
 
 **Postcondition:**  
@@ -759,6 +765,8 @@ Response Body
 | 8 | Check code status  | HTTP Status 400 Bad Request  |
 | 9  | Send POST request  /booking without key-value pair depositpaid | Request is sent.  |
 | 10 | Check code status  | HTTP Status 400 Bad Request  |
+| 11 | Send POST request  /booking wit "depositpaid": { object } | Request is sent.  |
+| 12 | Check code status  | HTTP Status 400 Bad Request  |
 
 
 **Postcondition:**  
@@ -839,8 +847,10 @@ Response Body
 | 8 | Check code status  | HTTP Status 422 Unprocessable Entity  |
 | 9  | Send POST request  /booking with "checkin": null | Request is sent.  |
 | 10 | Check code status  | HTTP Status 400 Bad Request  |
-| 9  | Send POST request  /booking without key-value pair checkin | Request is sent.  |
-| 10 | Check code status  | HTTP Status 400 Bad Request  |
+| 11  | Send POST request  /booking without key-value pair checkin | Request is sent.  |
+| 12 | Check code status  | HTTP Status 400 Bad Request  |
+| 13 | Send POST request  /booking wit "checkin": { object } | Request is sent.  |
+| 14 | Check code status  | HTTP Status 400 Bad Request  |
 
 
 **Postcondition:**  
@@ -922,8 +932,10 @@ Response Body
 | 8 | Check code status  | HTTP Status 422 Unprocessable Entity  |
 | 9  | Send POST request  /booking with "checkout": null | Request is sent.  |
 | 10 | Check code status  | HTTP Status 400 Bad Request  |
-| 9  | Send POST request  /booking without key-value pair checkout | Request is sent.  |
-| 10 | Check code status  | HTTP Status 400 Bad Request  |
+| 11  | Send POST request  /booking without key-value pair checkout | Request is sent.  |
+| 12 | Check code status  | HTTP Status 400 Bad Request  |
+| 13 | Send POST request  /booking wit "checkout": { object } | Request is sent.  |
+| 14 | Check code status  | HTTP Status 400 Bad Request  |
 
 
 **Postcondition:**  
