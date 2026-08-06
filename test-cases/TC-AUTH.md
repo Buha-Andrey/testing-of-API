@@ -266,7 +266,9 @@ Response Body
 | 5  | Send POST request  /auth with "username": null | Request is sent.  |
 | 6  | Check code status  | HTTP Status 400 Bad Request  |
 | 7  | Send POST request  /auth without key-value pair username | Request is sent.  |
-| 8 | Check code status  | HTTP Status 400 Bad Request  |
+| 8  | Check code status  | HTTP Status 400 Bad Request  |
+| 9  | Send POST request  /auth with "username": {"username" : {"key": "value"},"password" : "password123"} | Request is sent.  |
+| 10 | Check code status  | HTTP Status 400 Bad Request  |
 
 
 
@@ -324,6 +326,8 @@ Response Body
 | 6  | Check code status  | HTTP Status 400 Bad Request  |
 | 7  | Send POST request  /auth without key-value pair password | Request is sent.  |
 | 8 | Check code status  | HTTP Status 400 Bad Request  |
+| 9  | Send POST request  /auth with "password": {"username" : "admin","password" : {"key": "value"}} | Request is sent.  |
+| 10 | Check code status  | HTTP Status 400 Bad Request  |
 
 
 **Tags:** automated
