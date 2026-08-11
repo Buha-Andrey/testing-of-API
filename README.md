@@ -143,30 +143,33 @@ Negative
 
 ***Bug-reports***
 ```
-BUG-001: POST /auth endpoint returns status code 200 OK instead of 401 Unauthorized for invalid credentials
-BUG-002: POST /auth endpoint returns status code 200 OK instead of 400 Bad Request for invalid request body
-BUG-003: POST /auth endpoint returns status code 200 OK instead of 400 Bad Request for missing Content-Type header
-BUG-004: DELETE /booking/{id} endpoint returns status code 201 Created instead of 204 No Content for successful deleting of the booking
-BUG-005: Booking is missing from GET /booking response when its checkin date matches the requested checkin filter
+BUG-001: POST /auth returns 200 OK for invalid credentials
+BUG-002: POST /auth returns 200 OK for invalid data in request body
+BUG-003: POST /auth returns 200 OK for missing Content-Type header
+BUG-004: DELETE /booking/{id} returns 201 Created for successful deleting of the booking
+BUG-005: Booking is absent from GET /booking response when query parameter `checkin` is equal to the request body parameter `checkin`  
 BUG-006: API documentation has an incorrect description of the checkout parameter for GET /booking request
-BUG-007: GET /booking/{id} endpoint returns 404 Not Found when Accept header is missing from the request
-BUG-008: GET /booking/{id} returns 404 Not Found instead of 400 Bad Request for non-numeric ID
-BUG-009: POST /booking returns 200 OK instead of 201 Created when valid request is sent
-BUG-010: POST /booking returns 500 Internal Server Error instead of 400 Bad Request when the request without header Content-Type is sent
-BUG-011: POST /booking returns 418 I'm a teapot instead of 400 Bad Request when the request without header Accept is sent
-BUG-012: POST /booking returns 500 Internal Server Error instead of 400 Bad Request when the request is sent with invalid value of Content-Type header
-BUG-013: Sending request with empty string firstname/lastname returns 200 Ok instead of 422 Unprocessable Entity
-BUG-014: Sending request with numeric firstname/lastname returns 500 Internal Server Error instead of 400 Bad Request
-BUG-015: Sending request with null value of firstname/lastname returns 500 Internal Server Error instead of 400 Bad Request
-BUG-016: Sending request with object value of firstname/lastname returns 500 Internal Server Error instead of 400 Bad Request
-BUG-017: Sending request without firstname/lastname/totalprice/depositpaid/checkin/checkout fields returns 500 Internal Server Error instead of 400 Bad Request
-BUG-018: Sending request with non-positive numeric value of totalprice returns 200 OK instead of 422 Unprocessable Entity
-BUG-019: Sending request with string value of totalprice returns 200 OK instead of 400 Bad Request
-BUG-020: Sending request with object value of totalprice returns 200 OK instead of 400 Bad Request
-BUG-021: Sending request with object value, string value or not-zero number of depositpaid returns 200 OK instead of 400 Bad Request
-BUG-022: Sending request with zero number of depositpaid returns 200 OK instead of 400 Bad Request
-BUG-023: Sending request with number value of checkin/checkout returns 200 Internal Server Error instead of 400 Bad Request
-BUG-024: Sending request with string value of checkin/checkout returns 200 Internal Server Error instead of 400 Bad Request
+BUG-007: GET /booking/{id} returns 404 Not Found when Accept header is missing from the request
+BUG-008: GET /booking/{id} returns 404 Not Found for non-numeric ID
+BUG-009: POST /booking returns 200 OK when valid request is sent
+BUG-010: POST /booking returns 500 Internal Server Error when header Content-Type is missing in the request
+BUG-011: POST /booking returns 418 I'm a teapot when header Accept is missing in the request
+BUG-012: POST /booking returns 500 Internal Server Error instead when the request is sent with invalid value of Content-Type header
+BUG-013: 200 OK is returned on multiple endpoints when firstname/lastname properties are set to an empty string
+BUG-014: 500 Internal Server Error is returned on multiple endpoints when firstname/lastname properties are set to a number
+BUG-015: 500 Internal Server Error is returned on multiple endpoints when firstname/lastname properties are set to null 
+BUG-016: 500 Internal Server Error is returned on multiple endpoints when firstname/lastname properties are set to an object 
+BUG-017: 500 Internal Server Error is returned on multiple endpoints when firstname/lastname/totalprice/depositpaid/checkin/checkout properties are missing
+BUG-018: 200 OK is returned on multiple endpoints when totalprice property is set to non-positive number
+BUG-019: 200 OK is returned on multiple endpoints when totalprice property is set to a string 
+BUG-020: 200 OK is returned on multiple endpoints when totalprice property is set to an object 
+BUG-021: 200 OK is returned on multiple endpoints when depositpaid property is set to an object, string or non-zero number
+BUG-022: 200 OK is returned on multiple endpoints when depositpaid property is set to zero 
+BUG-023: 200 OK is returned on multiple endpoints when checkin/checkout properties are set to a number
+BUG-024: 200 OK is returned on multiple endpoints when checkin/checkout properties are set to a string 
+BUG-025: 200 OK is returned on multiple endpoints when checkin/checkout properties are set to an invalid date format 
+BUG-026: 200 OK is returned on multiple endpoints when checkin/checkout properties are set to a year-only format
+BUG-027: 200 OK is returned on multiple endpoints when checkin/checkout properties are set to an object
 ```
 
 
