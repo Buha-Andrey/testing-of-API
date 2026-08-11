@@ -141,6 +141,35 @@ Negative
 
 
 
+***Bug-reports***
+```
+BUG-001: POST /auth endpoint returns status code 200 OK instead of 401 Unauthorized for invalid credentials
+BUG-002: POST /auth endpoint returns status code 200 OK instead of 400 Bad Request for invalid request body
+BUG-003: POST /auth endpoint returns status code 200 OK instead of 400 Bad Request for missing Content-Type header
+BUG-004: DELETE /booking/{id} endpoint returns status code 201 Created instead of 204 No Content for successful deleting of the booking
+BUG-005: Booking is missing from GET /booking response when its checkin date matches the requested checkin filter
+BUG-006: API documentation has an incorrect description of the checkout parameter for GET /booking request
+BUG-007: GET /booking/{id} endpoint returns 404 Not Found when Accept header is missing from the request
+BUG-008: GET /booking/{id} returns 404 Not Found instead of 400 Bad Request for non-numeric ID
+BUG-009: POST /booking returns 200 OK instead of 201 Created when valid request is sent
+BUG-010: POST /booking returns 500 Internal Server Error instead of 400 Bad Request when the request without header Content-Type is sent
+BUG-011: POST /booking returns 418 I'm a teapot instead of 400 Bad Request when the request without header Accept is sent
+BUG-012: POST /booking returns 500 Internal Server Error instead of 400 Bad Request when the request is sent with invalid value of Content-Type header
+BUG-013: Sending request with empty string firstname/lastname returns 200 Ok instead of 422 Unprocessable Entity
+BUG-014: Sending request with numeric firstname/lastname returns 500 Internal Server Error instead of 400 Bad Request
+BUG-015: Sending request with null value of firstname/lastname returns 500 Internal Server Error instead of 400 Bad Request
+BUG-016: Sending request with object value of firstname/lastname returns 500 Internal Server Error instead of 400 Bad Request
+BUG-017: Sending request without firstname/lastname/totalprice/depositpaid/checkin/checkout fields returns 500 Internal Server Error instead of 400 Bad Request
+BUG-018: Sending request with non-positive numeric value of totalprice returns 200 OK instead of 422 Unprocessable Entity
+BUG-019: Sending request with string value of totalprice returns 200 OK instead of 400 Bad Request
+BUG-020: Sending request with object value of totalprice returns 200 OK instead of 400 Bad Request
+BUG-021: Sending request with object value, string value or not-zero number of depositpaid returns 200 OK instead of 400 Bad Request
+BUG-022: Sending request with zero number of depositpaid returns 200 OK instead of 400 Bad Request
+BUG-023: Sending request with null value of depositpaid returns 500 Internal Server Error instead of 400 Bad Request
+```
+
+
+
 
 
 Bugs:
