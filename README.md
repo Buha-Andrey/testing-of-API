@@ -166,6 +166,7 @@ BUG-020: Sending request with object value of totalprice returns 200 OK instead 
 BUG-021: Sending request with object value, string value or not-zero number of depositpaid returns 200 OK instead of 400 Bad Request
 BUG-022: Sending request with zero number of depositpaid returns 200 OK instead of 400 Bad Request
 BUG-023: Sending request with number value of checkin/checkout returns 200 Internal Server Error instead of 400 Bad Request
+BUG-024: Sending request with string value of checkin/checkout returns 200 Internal Server Error instead of 400 Bad Request
 ```
 
 
