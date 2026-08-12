@@ -154,7 +154,7 @@ BUG-008: GET /booking/{id} returns 404 Not Found for non-numeric ID
 BUG-009: POST /booking returns 200 OK when valid request is sent
 BUG-010: POST /booking returns 500 Internal Server Error when header Content-Type is missing in the request
 BUG-011: POST /booking returns 418 I'm a teapot when header Accept is missing in the request
-BUG-012: POST /booking returns 500 Internal Server Error instead when the request is sent with invalid value of Content-Type header
+BUG-012: POST /booking returns 500 Internal Server Error when the request is sent with invalid value of Content-Type header
 BUG-013: 200 OK is returned on multiple endpoints when firstname/lastname properties are set to an empty string
 BUG-014: 500 Internal Server Error is returned on multiple endpoints when firstname/lastname properties are set to a number
 BUG-015: 500 Internal Server Error is returned on multiple endpoints when firstname/lastname properties are set to null 
