@@ -173,6 +173,7 @@ BUG-027: 200 OK is returned on multiple endpoints when checkin/checkout properti
 BUG-028: POST /booking returns 200 OK when checkin date is later than checkout date
 BUG-029: POST /booking returns 500 Internal Server Error when request body is empty
 BUG-030: 405 Method Not Allowed is returned on PUT/PATCH endpoints when booking ID does not exist
+BUG-031: Decimal value of totalprice property is rounded to an integer on POST/PUT/PATCH endpoints
 ```
 
 
