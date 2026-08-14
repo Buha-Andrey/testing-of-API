@@ -152,8 +152,8 @@ BUG-006: API documentation has an incorrect description of the checkout paramete
 BUG-007: GET /booking/{id} returns 404 Not Found when Accept header is missing from the request
 BUG-008: GET /booking/{id} returns 404 Not Found for non-numeric ID
 BUG-009: POST /booking returns 200 OK when valid request is sent
-BUG-010: POST /booking returns 500 Internal Server Error when header Content-Type is missing in the request
-BUG-011: POST /booking returns 418 I'm a teapot when header Accept is missing in the request
+BUG-010: POST /booking returns 500 Internal Server Error when Content-Type header is missing in the request
+BUG-011: POST /booking returns 418 I'm a teapot when Accept header is missing in the request
 BUG-012: POST /booking returns 500 Internal Server Error when the request is sent with invalid value of Content-Type header
 BUG-013: 200 OK is returned on multiple endpoints when firstname/lastname properties are set to an empty string
 BUG-014: 500 Internal Server Error is returned on multiple endpoints when firstname/lastname properties are set to a number
@@ -174,6 +174,17 @@ BUG-028: POST /booking returns 200 OK when checkin date is later than checkout d
 BUG-029: POST /booking returns 500 Internal Server Error when request body is empty
 BUG-030: 405 Method Not Allowed is returned on PUT/PATCH endpoints when booking ID does not exist
 BUG-031: Decimal value of totalprice property is rounded to an integer on POST/PUT/PATCH endpoints
+BUG-032: checkout value is lost after checkin update with PATCH /booking/{id}
+BUG-033: PATCH /booking/{id} returns 200 OK when Content-Type header is missing in the request
+BUG-034: PATCH /booking/{id} returns 500 Internal Server Error when Accept header is missing in the request
+BUG-035: PATCH /booking/{id} returns 200 OK when the request is sent with invalid value of Content-Type header
+BUG-036: PATCH /booking/{id} returns 200 OK when firstname/lastname properties are set to a number
+BUG-037: PATCH /booking/{id} returns 405 Method Not Allowed when firstname/lastname properties are set to null
+BUG-038: PATCH /booking/{id} returns 200 OK when firstname/lastname properties are set to an object
+BUG-039: PATCH /booking/{id} returns 200 OK when depositpaid property is set to null
+BUG-040: PATCH /booking/{id} returns 200 OK when checkin/checkout properties are set to null
+BUG-041: PATCH /booking/{id} returns 200 OK when request body is empty
+BUG-042: 405 Method Not Allowed is returned on PUT/PATCH/DELETE endpoints when booking ID is set to non-numeric value
 ```
 
 
