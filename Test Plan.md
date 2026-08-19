@@ -4,6 +4,7 @@
 
 API: Restful-Booker API (https://restful-booker.herokuapp.com)    
 API doc: https://restful-booker.herokuapp.com/apidoc/index.html
+
 The following endpoints are covered:
 - Auth
   - POST /auth
@@ -51,15 +52,17 @@ Test data created by other users of the same public API may interfere with test 
 |---|---|---|
 | QA | Andrii Buha | Test planning, test execution, writing auto-tests, bug reporting |
 
-**Training needs:** Postman learning, JavaScript + Chai library    
+**Training needs:**     
+- JavaScript - required to write test scripts inside Postman
+- Chai - assertion library, used within Postman
+
 
 ## 4. Risk register
-| Risk type | Description | Probability | Impact | Mitigation |
-|---|---|---|---|---|
-| **Product risk** | |  |  |  |
-| **Product risk** | |  |  |  |
-| **Project risk** | |  |  |  |
-| **Project risk** | |  |  |  |
+| Description | Probability | Impact | Mitigation |
+|---|---|---|---|
+|API resets itself every 10 minutes back to that default state. | High | High | Need to create test data at the start every test run. |
+|Other user can delete/modify data, affecting test result | Low  | Medium  | Create only unique test data and test your own data |
+
 
 ## 5. Test approach
 ### 5.1 Test levels
