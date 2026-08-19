@@ -1,22 +1,57 @@
 ## 1. Context of testing
-**Test scope** - 
 
-**Test objectives** - 
+**Test scope**    
 
-**Test basis** - 
+API: Restful-Booker API (https://restful-booker.herokuapp.com)    
+API doc: https://restful-booker.herokuapp.com/apidoc/index.html
+The following endpoints are covered:
+- Auth
+  - POST /auth
+- Booking
+  - POST /booking
+  - GET /booking
+  - GET /booking/{id}
+  - PUT /booking/{id}
+  - PATCH /booking/{id}
+  - DELETE /booking/{id}
+
+<br>
+
+**Out of Scope**     
+- Performance / load testing API
+- UI testing (API-only project, no UI)
+- Security testing
+
+<br>
+
+**Test objectives** 
+- Verify that Booking CRUD endpoints work correctly according to the test basis.
+- Identify and document any differences between the actual API behavior and the API documentation.
+- Identify and report defects 
+- Cover all Booking endpoints with both positive and negative test-cases.
+
+<br>
+
+**Test basis**
+- Restful-Booker API documentation (https://restful-booker.herokuapp.com/apidoc/index.html)
+- Tester's domain knowledge and prior experience with testing
+
+<br>
 
 ## 2. Assumptions & Constraints
-**Assumptions**
-**Constraints**
+**Assumptions:**
+The Restful-Booker API will remain available and free. 
+
+**Constraints:**
+Test data created by other users of the same public API may interfere with test results.
+
 
 ## 3. The Team
 | Role | Who | Responsibility |
 |---|---|---|
-| Product owner |  |  |
-| Developer |  |  |
-| QA |   |  |
+| QA | Andrii Buha | Test planning, test execution, writing auto-tests, bug reporting |
 
-**Training needs** - 
+**Training needs:** Postman learning, JavaScript + Chai library    
 
 ## 4. Risk register
 | Risk type | Description | Probability | Impact | Mitigation |
