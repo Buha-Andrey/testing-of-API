@@ -66,29 +66,57 @@ Test data created by other users of the same public API may interfere with test 
 
 ## 5. Test approach
 ### 5.1 Test levels
-- Unit testing 
-- Integration testing 
-- System testing 
-- Acceptance testing
+System testing — the API will be tested as a black box, without access to internal implementation.
 
 ### 5.2 Test types 
-- Functional testing
-- Security testing (базові перевірки, якщо є auth/платежі)
+- Functional testing (API testing) — each endpoint will be tested to verify that it behaves according to the test basis.
+- Documentation testing — the API doc will be reviewed for clarity and cross-checked against actual API behavior to identify defects or missing information.
 
-### 5.3 Test techniques (Техніки)
+### 5.3 Test techniques
+The following techniques will be used to design test cases:
+- Equivalence partitioning and boundary value analysis - for validating checkin and checkout parameters.
+- Error guessing - testing based on the tester's knowledge of common API issues.
+- Checklist-based testing — for  covering each endpoint with set of positive/negative checks.
 
 ### 5.4 Test environment
+Only one environment is available: prod - https://restful-booker.herokuapp.com
+Note: The environment resets to default state every 10 minutes.
 
 ### 5.5 Testing tools
+Postman - creation/sending HTTP requests, building test collection, writing test scripts    
+GitHub - storage for test cases, bug reports, test plan and test summary report
 
 ### 5.6 Browser / OS
+Chrome v. 151
+Windows 11 v.25H2
+Linux 
 
 ### 5.7 Test artefacts 
+- Checklist
+- Test cases 
+- Bug reports
+- Test plan
+- Test summary report
 
 ### 5.8 Entry criteria / Exit criteria
+Entry criteria:
+- Required training completed
+- API is accessible
+- API documentation is available
 
-### 5.9 Independence of testing
+Exit criteria:
+- Every endpoint is covered with test-case
+- Collection run is built
+- All identified defects are documented as bug reports
 
-### 5.10 Metrics to be collected
+### 5.9 Metrics to be collected
+- Test coverage: % of endpoints with at least one test case (based on the traceability matrix)
+- Defect density per endpoint: number of defects found, grouped by endpoint
 
-### 5.11 Test data requirements
+### 5.10 Test data requirements
+Unique test data will be generated for each test case:
+```
+  "firstname": "RestfulBooker",
+  "lastname": "Test",
+```
+Also bookings created during test execution have to be deleted after test case.
