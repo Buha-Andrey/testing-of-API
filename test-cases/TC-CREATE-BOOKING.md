@@ -157,7 +157,7 @@ Delete the bookings
 
 ### ID: SWAT-33972 - Title: Create booking with header Accept: application/xml
 
-**Priority:** P1
+**Priority:** P2
 
 **Precondition:**  
 
