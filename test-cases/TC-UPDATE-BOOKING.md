@@ -79,7 +79,7 @@ Delete the booking
 
 ### ID: SWAT-33991 - Title: Update booking with header Accept: application/xml
 
-**Priority:** P1
+**Priority:** P2
 
 **Precondition:**  
 Authorize as admin   
@@ -227,7 +227,7 @@ Response Body
 
 ### ID: SWAT-33993 - Title: Update booking without header Content-Type
 
-**Priority:** P1
+**Priority:** P2
 
 **Precondition:**  
 Authorize as admin   
@@ -306,7 +306,7 @@ Delete booking
 
 ### ID: SWAT-33994 - Title: Update booking without header Accept 
 
-**Priority:** P1
+**Priority:** P2
 
 **Precondition:**  
 Authorize as admin   
@@ -385,7 +385,7 @@ Delete booking
 
 ### ID: SWAT-33995 - Title: Update booking with invalid value of Content-Type header
 
-**Priority:** P1
+**Priority:** P2
 
 **Precondition:**  
 Authorize as admin   
