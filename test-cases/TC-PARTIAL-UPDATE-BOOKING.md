@@ -399,7 +399,7 @@ Delete the booking
 
 ### ID: SWAT-34016 - Title: Partial update booking with header Accept: application/xml
 
-**Priority:** P1
+**Priority:** P2
 
 **Precondition:**  
 Authorize as admin   
@@ -1033,7 +1033,7 @@ Delete booking
 
 ### ID: SWAT-34027 - Title: Partial update booking with empty request body
 
-**Priority:** P2
+**Priority:** P1
 
 **Precondition:**  
 Authorize as admin   
