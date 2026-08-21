@@ -753,7 +753,7 @@ Response Body
 
 ### ID: SWAT-33942 - Title: Authorization: PUT without token 
 
-**Priority:** P1
+**Priority:** P2
 
 **Precondition:**  
 Create booking with valid data  
@@ -811,7 +811,7 @@ Request Body
 
 ### ID: SWAT-33943 - Title: Authorization: PATCH without token 
 
-**Priority:** P1
+**Priority:** P2
 
 **Precondition:**  
 Create booking with valid data  
@@ -859,7 +859,7 @@ Request Body
 
 ### ID: SWAT-33944 - Title: Authorization: DELETE without token 
 
-**Priority:** P1
+**Priority:** P2
 
 **Precondition:**  
 Create booking with valid data  
@@ -898,7 +898,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 
 ### ID: SWAT-33945 - Title: Authorization: PUT with invalid token
 
-**Priority:** P1
+**Priority:** P2
 
 **Precondition:**  
 Create booking with valid data  
@@ -939,7 +939,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 
 ### ID: SWAT-33946 - Title: Authorization: PATCH with invalid token
 
-**Priority:** P1
+**Priority:** P2
 
 **Precondition:**  
 Create booking with valid data  
@@ -979,7 +979,7 @@ Endpoint https://restful-booker.herokuapp.com/booking/id
 
 ### ID: SWAT-33947 - Title: Authorization: DELETE with invalid token
 
-**Priority:** P1
+**Priority:** P2
 
 **Precondition:**  
 Create booking with valid data  
