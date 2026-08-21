@@ -62,7 +62,7 @@ Delete test booking
 
 ### ID: SWAT-33961 - Title: Get booking with existing valid ID in xml format
 
-**Priority:** P1
+**Priority:** P2
 
 **Precondition:**   
 Create booking  
