@@ -1,0 +1,77 @@
+Test Object,TC Priority,Test Case ID,Test CaseTitle,Test Type,TC Status,Smoke/Regres,Autotest
+Authentication (POST /auth),P1,SWAT-33928,Authentication with valid credentials,Positive,Done,Smoke,automated
+Authentication (POST /auth),P1,SWAT-33929,POST /auth generates unique token on each request,Positive,Done,Regression,automated
+Authentication (POST /auth),P2,SWAT-33930,Authentication fails with incorrect password,Negative,Done,Smoke,automated
+Authentication (POST /auth),P2,SWAT-33931,Authentication fails with incorrect username,Negative,Done,Smoke,automated
+Authentication (POST /auth),P2,SWAT-33932,Authentication: username field validation,Negative,Done,Regression,automated
+Authentication (POST /auth),P2,SWAT-33933,Authentication: password field validation,Negative,Done,Regression,automated
+Authentication (POST /auth),P2,SWAT-33934,Authentication without header Content-Type,Negative,Done,Regression,automated
+Authorization (Token Usage),P1,SWAT-33936,Authorization: PUT with valid token through Cookie header,Positive,Done,Smoke,automated
+Authorization (Token Usage),P1,SWAT-33937,Authorization: PATCH with valid token through Cookie header,Positive,Done,Smoke,automated
+Authorization (Token Usage),P1,SWAT-33938,Authorization: DELETE with valid token through Cookie header,Positive,Done,Smoke,automated
+Authorization (Token Usage),P1,SWAT-33939,Authorization: PUT with valid token through Authorization header,Positive,Done,Smoke,automated
+Authorization (Token Usage),P1,SWAT-33940,Authorization: PATCH with valid token through Authorization header,Positive,Done,Smoke,automated
+Authorization (Token Usage),P1,SWAT-33941,Authorization: DELETE with valid token through Authorization header,Positive,Done,Smoke,automated
+Authorization (Token Usage),P2,SWAT-33942,Authorization: PUT without token,Negative,Done,Regression,automated
+Authorization (Token Usage),P2,SWAT-33943,Authorization: PATCH without token,Negative,Done,Regression,automated
+Authorization (Token Usage),P2,SWAT-33944,Authorization: DELETE without token,Negative,Done,Regression,automated
+Authorization (Token Usage),P2,SWAT-33945,Authorization: PUT with invalid token,Negative,Done,Regression,automated
+Authorization (Token Usage),P2,SWAT-33946,Authorization: PATCH with invalid token,Negative,Done,Regression,automated
+Authorization (Token Usage),P2,SWAT-33947,Authorization: DELETE with invalid token,Negative,Done,Regression,automated
+Booking Search (GET /booking),P1,SWAT-33950,Get list of booking ids,Positive,In Progress,Smoke,automated
+Booking Search (GET /booking),P1,SWAT-33951,"Filter booking by firstname, lastname, checkin, checkout",Positive,Done,Smoke,automated
+Booking Search (GET /booking),P1,SWAT-33952,Boundary value analysis of checkin date,Positive,Done,Regression,automated
+Booking Search (GET /booking),P1,SWAT-33953,Boundary value analysis of checkout date,Positive,Done,Regression,automated
+Specific Booking (GET /booking/id),P1,SWAT-33960,Get booking with existing valid ID,Positive,Done,Smoke,automated
+Specific Booking (GET /booking/id),P2,SWAT-33961,Get booking with existing valid ID in xml format,Positive,Done,Regression,automated
+Specific Booking (GET /booking/id),P3,SWAT-33962,Get booking without header Accept,Negative,Done,Regression,automated
+Specific Booking (GET /booking/id),P2,SWAT-33963,Get booking with non-existent valid ID,Negative,Done,Smoke,automated
+Specific Booking (GET /booking/id),P2,SWAT-33964,Get booking: ID parameter validation,Negative,Done,Regression,automated
+Create Booking (POST /booking),P0,SWAT-33970,Create booking: all fields with valid data,Positive,Done,Smoke,automated
+Create Booking (POST /booking),P2,SWAT-33971,POST /booking creates unique booking on each request,Positive,Done,Regression,automated
+Create Booking (POST /booking),P2,SWAT-33972,Create booking with header Accept: application/xml,Positive,Done,Regression,automated
+Create Booking (POST /booking),P2,SWAT-33973,Create booking without header Content-Type,Negative,Done,Regression,automated
+Create Booking (POST /booking),P2,SWAT-33974,Create booking without header Accept,Negative,Done,Regression,automated
+Create Booking (POST /booking),P2,SWAT-33975,Create booking with invalid value of Content-Type header,Negative,Done,Regression,automated
+Create Booking (POST /booking),P2,SWAT-33976,Create booking: firstname field validation,Negative,Done,Regression,automated
+Create Booking (POST /booking),P2,SWAT-33977,Create booking: lastname field validation,Negative,Done,Regression,automated
+Create Booking (POST /booking),P2,SWAT-33978,Create booking: totalprice field validation,Negative,Done,Regression,automated
+Create Booking (POST /booking),P2,SWAT-33979,Create booking: depositpaid field validation,Negative,Done,Regression,automated
+Create Booking (POST /booking),P2,SWAT-33980,Create booking: checkin field validation,Negative,Done,Regression,automated
+Create Booking (POST /booking),P2,SWAT-33981,Create booking: checkout field validation,Negative,Done,Regression,automated
+Create Booking (POST /booking),P2,SWAT-33982,Create booking with checkin date that is later than checkout date,Negative,Done,Regression,automated
+Create Booking (POST /booking),P2,SWAT-33983,Create booking with empty request body,Negative,Done,Smoke,automated
+Update Booking (PUT /booking/id),P1,SWAT-33990,Update booking: all fields with valid data,Positive,Done,Smoke,automated
+Update Booking (PUT /booking/id),P2,SWAT-33991,Update booking with header Accept: application/xml,Positive,Done,Regression,automated
+Update Booking (PUT /booking/id),P1,SWAT-33992,Update non-existent booking,Negative,Done,Smoke,automated
+Update Booking (PUT /booking/id),P3,SWAT-33993,Update booking without header Content-Type,Negative,Done,Regression,automated
+Update Booking (PUT /booking/id),P3,SWAT-33994,Update booking without header Accept,Negative,Done,Regression,automated
+Update Booking (PUT /booking/id),P3,SWAT-33995,Update booking with invalid value of Content-Type header,Negative,Done,Regression,automated
+Update Booking (PUT /booking/id),P2,SWAT-33996,Update booking: firstname field validation,Negative,Done,Regression,automated
+Update Booking (PUT /booking/id),P2,SWAT-33997,Update booking: lastname field validation,Negative,Done,Regression,automated
+Update Booking (PUT /booking/id),P2,SWAT-33998,Update booking: totalprice field validation,Negative,Done,Regression,automated
+Update Booking (PUT /booking/id),P2,SWAT-33999,Update booking: depositpaid field validation,Negative,Done,Regression,automated
+Update Booking (PUT /booking/id),P2,SWAT-34000,Update booking: checkin field validation,Negative,Done,Regression,automated
+Update Booking (PUT /booking/id),P2,SWAT-34001,Update booking: checkout field validation,Negative,Done,Regression,automated
+Partial Update Booking (PATCH /booking/id),P1,SWAT-34010,Partial update: firstname field with valid data,Positive,Done,Smoke,automated
+Partial Update Booking (PATCH /booking/id),P1,SWAT-34011,Partial update: lastname field with valid data,Positive,Done,Smoke,automated
+Partial Update Booking (PATCH /booking/id),P1,SWAT-34012,Partial update: totalprice field with valid data,Positive,Done,Smoke,automated
+Partial Update Booking (PATCH /booking/id),P1,SWAT-34013,Partial update: depositpaid field with valid data,Positive,Done,Smoke,automated
+Partial Update Booking (PATCH /booking/id),P1,SWAT-34014,Partial update: checkin field with valid data,Positive,Done,Smoke,automated
+Partial Update Booking (PATCH /booking/id),P1,SWAT-34015,Partial update: checkout field with valid data,Positive,Done,Smoke,automated
+Partial Update Booking (PATCH /booking/id),P2,SWAT-34016,Partial update booking with header Accept: application/xml,Positive,Done,Regression,automated
+Partial Update Booking (PATCH /booking/id),P1,SWAT-34017,Partial update non-existent booking,Negative,Done,Smoke,automated
+Partial Update Booking (PATCH /booking/id),P3,SWAT-34018,Partial update booking without header Content-Type,Negative,Done,Regression,automated
+Partial Update Booking (PATCH /booking/id),P3,SWAT-34019,Partial update booking without header Accept,Negative,Done,Regression,automated
+Partial Update Booking (PATCH /booking/id),P3,SWAT-34020,Partial update booking with invalid value of Content-Type header,Negative,Done,Regression,automated
+Partial Update Booking (PATCH /booking/id),P2,SWAT-34021,Partial update booking: firstname field validation,Negative,Done,Regression,automated
+Partial Update Booking (PATCH /booking/id),P2,SWAT-34022,Partial update booking: lastname field validation,Negative,Done,Regression,automated
+Partial Update Booking (PATCH /booking/id),P2,SWAT-34023,Partial update booking: totalprice field validation,Negative,Done,Regression,automated
+Partial Update Booking (PATCH /booking/id),P2,SWAT-34024,Partial update booking: depositpaid field validation,Negative,Done,Regression,automated
+Partial Update Booking (PATCH /booking/id),P2,SWAT-34025,Partial update booking: checkin field validation,Negative,Done,Regression,automated
+Partial Update Booking (PATCH /booking/id),P2,SWAT-34026,Partial update booking: checkout field validation,Negative,Done,Regression,automated
+Partial Update Booking (PATCH /booking/id),P1,SWAT-34027,Partial update booking with empty request body,Negative,Done,Smoke,automated
+Delete Booking (DELETE /booking/id),P1,SWAT-34030,Delete existing booking,Positive,Done,Smoke,automated
+Delete Booking (DELETE /booking/id),P2,SWAT-34031,Delete non-existent booking,Negative,Done,Smoke,automated
+Delete Booking (DELETE /booking/id),P2,SWAT-34032,Delete booking: ID parameter validation,Negative,Done,Regression,automated
+Delete Booking (DELETE /booking/id),P2,SWAT-34033,Delete same booking twice in a row,Negative,Done,Regression,automated
