@@ -119,4 +119,4 @@ Unique test data will be generated for each test case:
   "firstname": "RestfulBooker",
   "lastname": "Test",
 ```
-Also bookings created during test execution have to be deleted after test case.
+Also created bookings during test execution have to be deleted after test case.
