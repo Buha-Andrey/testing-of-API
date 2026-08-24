@@ -62,6 +62,15 @@ The pass rate of 31.58% is notably low: Restful-Booker is a public training API.
 | ID | Priority | Summary |
 |----|----------|---------|
 | BUG-005 | P1 | According to the documentation GET /booking request have to return booking that has a checkin date equal to the set checkin date |
-| BUG-013 | P1 | Request with an empty string as the firstname/lastname value returns status code 200 Ok instead of 422 Unprocessable Entity.  |
-| BUG-032 | P1 | checkout value is lost after checkin update with PATCH /booking/{id} |
- 
+| BUG-006 | P1 | API documentation has an incorrect description of the checkout parameter for GET /booking request  |
+| BUG-013 | P1 | Request with an empty string as the firstname/lastname value returns status code 200 Ok instead of 422 Unprocessable Entity  |
+| BUG-031 | P1 | There is data loss in case when user puts decimal value of totalprice  |
+
+No P0 (blocker) defects were identified — core functionality of all endpoints is reachable and returns responses
+
+## 4. Risks & Limitations
+- This API is public, so other users can delete/modify data, affecting test result
+- API resets itself every 10 minutes back to that default state.
+
+## 5. Conclusion & Recommendations
+Testing of Restful-Booker API shows us high quantity of defects (42). The main are of defects is validating logic across multiple endpoints: `POST /booking`, `PUT /booking/{id}`, `PATCH /booking/{id}`.
