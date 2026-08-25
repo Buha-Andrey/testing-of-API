@@ -29,7 +29,6 @@ The following endpoints are covered:
 - Covered all Booking endpoints with both positive and negative test-cases.'
 
 ---
-
 ## 2. Test Execution Summary
  
 | Metric            | Result |
@@ -47,6 +46,7 @@ The following endpoints are covered:
  
 The pass rate of 31.58% is notably low: Restful-Booker is a public training API. Developer claims that API has "a bunch of bugs for you to explore."
 
+---
 ## 3. Defect Summary
  
 | Priority | Total |
@@ -82,10 +82,12 @@ POST /booking shows the highest defect density (1.57), indicating the weakest va
 
 No P0 (blocker) defects were identified — core functionality of all endpoints is reachable and returns responses
 
+---
 ## 4. Risks & Limitations
 - This API is public, so other users can delete/modify data, affecting test result
 - API resets itself every 10 minutes back to that default state.
 
+---
 ## 5. Conclusion & Recommendations
 Testing of Restful-Booker API shows us high quantity of defects (42). The main area of defects is validating logic across multiple endpoints: `POST /booking`, `PUT /booking/{id}`, `PATCH /booking/{id}`.
 
