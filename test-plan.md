@@ -25,10 +25,7 @@ The following endpoints are covered:
 
 <br>
 
-**Out of Scope**     
-- Performance / load testing API
-- UI testing (API-only project, no UI)
-- Security testing
+**Out of Scope:** Performance/load testing API, UI testing (API-only project, no UI). Security testing
 
 <br>
 
@@ -93,9 +90,9 @@ Postman - creation/sending HTTP requests, building test collection, writing test
 GitHub - storage for test cases, bug reports, test plan and test summary report
 
 ### 5.6 Browser / OS
-Chrome v. 151
-Windows 11 v.25H2
-Linux 
+Chrome v. 151  
+Windows 11 v.25H2  
+Linux   
 
 ### 5.7 Test artefacts 
 - Checklist
@@ -126,3 +123,7 @@ Unique test data will be generated for each test case:
   "lastname": "Test",
 ```
 Also created bookings during test execution have to be deleted after test case.
+
+## 6. References
+[API doc](https://restful-booker.herokuapp.com/apidoc/index.html)
+[Traceability Matrix](https://docs.google.com/spreadsheets/d/111-6AXOlewD8npjZgfV-zUuCyTkDSOxg4d8EjTl8KXs/edit?gid=72061247#gid=72061247)
