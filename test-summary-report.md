@@ -57,8 +57,22 @@ The pass rate of 31.58% is notably low: Restful-Booker is a public training API.
 | P3       |    11 |
 | **Total**|   **42** |
 
+### Defect Density per Endpoint  
+Defect Density = Number of unique defects ÷ Number of test cases executed, per endpoint
+| Endpoint              | Test Cases | Unique Defects | Density |
+|-----------------------|-----------:|---------------:|--------:|
+| Auth (POST /auth)     |          7 |              3 |    0.43 |
+| Auth (Token Usage)    |         12 |              1 |    0.08 |
+| GET /booking          |          4 |              2 |    0.50 |
+| GET /booking/{id}     |          5 |              2 |    0.40 |
+| POST /booking         |         14 |             22 |    1.57 |
+| PUT /booking/{id}     |         12 |             17 |    1.42 |
+| PATCH /booking/{id}   |         18 |             22 |    1.22 |
+| DELETE /booking/{id}  |          4 |              4 |    1.00 |
+
+POST /booking shows the highest defect density (1.57), indicating the weakest validation logic among the tested endpoints.
+
 ### Notable Defects
- 
 | ID | Priority | Summary |
 |----|----------|---------|
 | BUG-005 | P1 | According to the documentation GET /booking request have to return booking that has a checkin date equal to the set checkin date |
@@ -74,3 +88,7 @@ No P0 (blocker) defects were identified — core functionality of all endpoints 
 
 ## 5. Conclusion & Recommendations
 Testing of Restful-Booker API shows us high quantity of defects (42). The main area of defects is validating logic across multiple endpoints: `POST /booking`, `PUT /booking/{id}`, `PATCH /booking/{id}`.
+
+**Suggested next steps:**
+- Prioritize fixes for P1 defects
+- Re-test affected endpoints after fixes
