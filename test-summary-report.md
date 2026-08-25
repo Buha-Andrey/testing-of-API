@@ -73,4 +73,4 @@ No P0 (blocker) defects were identified — core functionality of all endpoints 
 - API resets itself every 10 minutes back to that default state.
 
 ## 5. Conclusion & Recommendations
-Testing of Restful-Booker API shows us high quantity of defects (42). The main are of defects is validating logic across multiple endpoints: `POST /booking`, `PUT /booking/{id}`, `PATCH /booking/{id}`.
+Testing of Restful-Booker API shows us high quantity of defects (42). The main area of defects is validating logic across multiple endpoints: `POST /booking`, `PUT /booking/{id}`, `PATCH /booking/{id}`.
