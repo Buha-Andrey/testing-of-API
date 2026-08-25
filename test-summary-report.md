@@ -42,8 +42,7 @@ The following endpoints are covered:
 **Coverage:** All 7 endpoints in scope are covered by both positive and negative test cases; full mapping is available in the Traceability Matrix.
 **Automation scripts:** 76 of 76 test cases are automated (100%), implemented as a Postman collection.
 
-### Analysis
- 
+### Analysis  
 The pass rate of 31.58% is notably low: Restful-Booker is a public training API. Developer claims that API has "a bunch of bugs for you to explore."
 
 ---
@@ -76,11 +75,21 @@ POST /booking shows the highest defect density (1.57), indicating the weakest va
 | ID | Priority | Summary |
 |----|----------|---------|
 | BUG-005 | P1 | According to the documentation GET /booking request have to return booking that has a checkin date equal to the set checkin date |
-| BUG-006 | P1 | API documentation has an incorrect description of the checkout parameter for GET /booking request  |
 | BUG-013 | P1 | Request with an empty string as the firstname/lastname value returns status code 200 Ok instead of 422 Unprocessable Entity  |
 | BUG-031 | P1 | There is data loss in case when user puts decimal value of totalprice  |
 
 No P0 (blocker) defects were identified - core functionality of all endpoints is reachable and returns responses
+
+### Documentation Testing Results
+ 
+As part of test execution, the official API documentation was reviewed for clarity and cross-checked against API behavior. This shows two types of findings: (1) cases where the documentation and actual API behavior disagree with each other, and (2) cases where the documentation and API agree with each other but both deviate from expected REST standards.
+
+*Documentation vs actual behavior:*  
+BUG-006: API documentation has an incorrect description of the checkout parameter for GET /booking request  
+
+*Documentation vs REST standards:*  
+BUG-004: DELETE /booking/{id} returns 201 Created for successful deleting of the booking  
+BUG-009: POST /booking returns 200 OK when valid request is sent  
 
 ---
 ## 4. Risks & Limitations
