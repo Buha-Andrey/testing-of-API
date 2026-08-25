@@ -1,6 +1,6 @@
 # Test Summary Report
  
-**Project:** Restful-Booker API — QA Testing    
+**Project:** Restful-Booker API - QA Testing    
 **Test basis:** https://restful-booker.herokuapp.com/apidoc/index.html    
 **Prepared by:** Buha Andrii    
 **Related documents:** Test Plan, Test Cases, Traceability Matrix, Bug Reports    
@@ -80,7 +80,7 @@ POST /booking shows the highest defect density (1.57), indicating the weakest va
 | BUG-013 | P1 | Request with an empty string as the firstname/lastname value returns status code 200 Ok instead of 422 Unprocessable Entity  |
 | BUG-031 | P1 | There is data loss in case when user puts decimal value of totalprice  |
 
-No P0 (blocker) defects were identified — core functionality of all endpoints is reachable and returns responses
+No P0 (blocker) defects were identified - core functionality of all endpoints is reachable and returns responses
 
 ---
 ## 4. Risks & Limitations
