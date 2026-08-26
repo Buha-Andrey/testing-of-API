@@ -14,6 +14,6 @@ This QA project is applied to [Restful-Booker API](https://restful-booker.heroku
 | Postman Collection | [`postman/collection/`](./postman/collection/) |
 | HTML Run Report | [`postman/collection/report.html`](https://buha-andrey.github.io/testing-of-API/postman/report.html) |
 | Bug Reports (42 found) | [`bug-reports/`](./bug-reports/) |
-| Traceability Matrix | [`traceability-matrix/`](https://docs.google.com/spreadsheets/d/111-6AXOlewD8npjZgfV-zUuCyTkDSOxg4d8EjTl8KXs/edit?usp=sharing) |
+| Traceability Matrix | [`traceability-matrix/Traceability Matrix.csv`](https://docs.google.com/spreadsheets/d/111-6AXOlewD8npjZgfV-zUuCyTkDSOxg4d8EjTl8KXs/edit?usp=sharing) |
 | Test Summary Report | [`test-documentation/test-summary-report.md`](./test-documentation/test-summary-report.md) |
 
