@@ -1,5 +1,5 @@
 ***Checklist of TC-AUTH***  
-**Authentication (POST /auth)** 
+**Authentication `POST /auth`** 
 
 Positive
 1. Authentication with valid credentials.
@@ -30,7 +30,7 @@ Negative
 
 <br>
 
-**Checklist of TC-GET-BOOKING-IDS GET /booking**  
+**Checklist of TC-GET-BOOKING-IDS `GET /booking`**  
 
 Positive
 1. Get list of booking ids
@@ -40,7 +40,7 @@ Positive
 
 <br>
 
-**Checklist of TC-GET-BOOKING GET /booking/id**
+**Checklist of TC-GET-BOOKING `GET /booking/id`**
 
 Positive
 1. Get booking with existing valid ID
@@ -53,7 +53,7 @@ Negative
 
 <br>
 
-**Checklist of TC-CREATE-BOOKING POST /booking**
+**Checklist of TC-CREATE-BOOKING `POST /booking`**
 
 Positive
 1. Create booking: all fields with valid data
@@ -75,7 +75,7 @@ Negative
 
 <br>
 
-**Checklist of TC-UPDATE-BOOKING PUT /booking/:id**
+**Checklist of TC-UPDATE-BOOKING `PUT /booking/:id`**
 
 Positive
 1. Update booking: all fields with valid data 
@@ -97,7 +97,7 @@ Negative
 
 <br>
 
-**Checklist of TC-PARTIAL-UPDATE-BOOKING PATCH /booking/:id** 
+**Checklist of TC-PARTIAL-UPDATE-BOOKING `PATCH /booking/:id`** 
 
 Positive
 1. Partial update: firstname field with valid data 
@@ -125,7 +125,7 @@ Negative
 
 <br>
 
-**Checklist of TC-DELETE-BOOKING DELETE /booking/:id** 
+**Checklist of TC-DELETE-BOOKING `DELETE /booking/:id`** 
 
 Positive
 1. Delete existing booking
