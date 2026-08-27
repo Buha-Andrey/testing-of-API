@@ -26,3 +26,19 @@ Tracing a single test case - from written test case, through request in Postman 
 3. **Bug Found**    
    According to the documentation GET /booking request have to return booking that has a checkin date equal to the set checkin date
 4. **Bug Report**  [`BUG-005: Booking is absent from GET /booking response when query parameter checkin is equal to the request body parameter checkin`](https://github.com/Buha-Andrey/testing-of-API/blob/main/bug-reports/BUG-005.md)
+
+## Run the Collection
+
+```bash
+# clone the repo
+git clone https://github.com/Buha-Andrey/testing-of-API.git
+cd testing-of-API
+# run the collection with environment 
+postman collection run postman/collection/restful-booker.postman_collection.json -e postman/collection/restful-booker.postman_environment.json 
+```
+
+
+
+## The Results
+
+
