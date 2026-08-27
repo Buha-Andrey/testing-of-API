@@ -50,6 +50,6 @@ postman collection run postman/collection/restful-booker.postman_collection.json
 
 The 31.58% pass rate is notably low: Restful-Booker is a public training API. Developer claims that API has "a bunch of bugs for you to explore."
 
-Full details: [Test Summary Report](./test-documentation/test-summary-report.md) · [Postman HTML Report](./postman/report.html) · [Traceability Matrix](https://docs.google.com/spreadsheets/d/111-6AXOlewD8npjZgfV-zUuCyTkDSOxg4d8EjTl8KXs/edit?usp=sharing)
+Full details: [Test Summary Report](./test-documentation/test-summary-report.md) · [Postman HTML Report](https://buha-andrey.github.io/testing-of-API/postman/report.html) · [Traceability Matrix](https://docs.google.com/spreadsheets/d/111-6AXOlewD8npjZgfV-zUuCyTkDSOxg4d8EjTl8KXs/edit?usp=sharing)
 
 
