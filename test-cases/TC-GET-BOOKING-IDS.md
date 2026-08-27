@@ -119,7 +119,11 @@ lastname - Test
 checkin - 2026-01-01      
 
 
-**Test data:** -
+**Test data:**         
+firstname=RestfulBooker        
+lastname=Test        
+checkin=2026-01-01    
+   
 
 **Request structure:**
 
@@ -180,7 +184,10 @@ lastname - Test
 checkout - 2025-12-31     
 
 
-**Test data:** -
+**Test data:**         
+firstname=RestfulBooker        
+lastname=Test        
+checkout=2025-12-31    
 
 **Request structure:**
 
