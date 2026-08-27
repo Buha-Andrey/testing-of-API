@@ -60,7 +60,11 @@ checkin - 2026-06-01
 checkout - 2026-06-17   
 
 
-**Test data:** -
+**Test data:**         
+firstname=RestfulBooker        
+lastname=Test        
+checkin=2026-06-01    
+checkout=2026-06-17     
 
 **Request structure:**
 
