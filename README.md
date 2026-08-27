@@ -22,15 +22,7 @@ This QA project demonstrates testing of the [Restful-Booker API](https://restful
 Tracing a single test case - from written test case, through request in Postman collection, to a discovered defect:
 
 1. **Test Case**  [`SWAT-33951 - Filter booking by firstname, lastname, checkin, checkout`](https://github.com/Buha-Andrey/testing-of-API/blob/main/test-cases/TC-GET-BOOKING-IDS.md#id-swat-33951---title-filter-booking-by-firstname-lastname-checkin-checkout)
-2. **Request in Postman collection**    
-**Pre-request script:**    
-Precondition: The booking is created using POST /booking.     
-**Request:**    
-GET /booking is sent with test data: query params and headers.     
-**Post-request script:**    
-Assertions to check response    
-Postcondition:  Created booking is deleted and data is unset.    
-
-4. **Bug Found**    
+2. **Request in Postman collection** [Link to collection.json](https://github.com/Buha-Andrey/testing-of-API/blob/main/postman/collection/restful-booker.postman_collection.json)
+3. **Bug Found**    
    According to the documentation GET /booking request have to return booking that has a checkin date equal to the set checkin date
-5. **Bug Report**  [`BUG-005: Booking is absent from GET /booking response when query parameter checkin is equal to the request body parameter checkin`](https://github.com/Buha-Andrey/testing-of-API/blob/main/bug-reports/BUG-005.md)
+4. **Bug Report**  [`BUG-005: Booking is absent from GET /booking response when query parameter checkin is equal to the request body parameter checkin`](https://github.com/Buha-Andrey/testing-of-API/blob/main/bug-reports/BUG-005.md)
