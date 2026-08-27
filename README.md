@@ -10,10 +10,10 @@ This QA project demonstrates testing of the [Restful-Booker API](https://restful
 | Artifact | Link |
 |---|---|
 | Test Plan | [`test-documentation/test-plan.md`](./test-documentation/test-plan.md) |
-| Test Cases (76 total) | [`test-cases/`](./test-cases/) |
+| Test Cases | [`test-cases/`](./test-cases/) |
 | Postman Collection | [`postman/collection/`](./postman/collection/) |
 | HTML Run Report | [`postman/collection/report.html`](https://buha-andrey.github.io/testing-of-API/postman/report.html) |
-| Bug Reports (42 found) | [`bug-reports/`](./bug-reports/) |
+| Bug Reports | [`bug-reports/`](./bug-reports/) |
 | Traceability Matrix | [`traceability-matrix/Traceability Matrix.csv`](https://docs.google.com/spreadsheets/d/111-6AXOlewD8npjZgfV-zUuCyTkDSOxg4d8EjTl8KXs/edit?usp=sharing) |
 | Test Summary Report | [`test-documentation/test-summary-report.md`](./test-documentation/test-summary-report.md) |
 
@@ -38,7 +38,18 @@ postman collection run postman/collection/restful-booker.postman_collection.json
 ```
 
 
-
 ## The Results
+
+| Metric | Value |
+|---|---|
+| Test Cases Designed | 76 |
+| Test Cases Automated (Postman) | 76 |
+| Test Runs Passed / Failed | 24 / 52 |
+| Bugs Found | 42  |
+| Requirements Traceability Coverage | 100% |
+
+The 31.58% pass rate is notably low: Restful-Booker is a public training API. Developer claims that API has "a bunch of bugs for you to explore."
+
+Full details: [Test Summary Report](./test-documentation/test-summary-report.md) · [Postman HTML Report](./postman/report.html) · [Traceability Matrix](https://docs.google.com/spreadsheets/d/111-6AXOlewD8npjZgfV-zUuCyTkDSOxg4d8EjTl8KXs/edit?usp=sharing)
 
 
