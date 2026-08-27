@@ -53,3 +53,6 @@ The 31.58% pass rate is notably low: Restful-Booker is a public training API. De
 Full details: [Test Summary Report](./test-documentation/test-summary-report.md) · [Postman HTML Report](https://buha-andrey.github.io/testing-of-API/postman/report.html) · [Traceability Matrix](https://docs.google.com/spreadsheets/d/111-6AXOlewD8npjZgfV-zUuCyTkDSOxg4d8EjTl8KXs/edit?usp=sharing)
 
 
+## Future Improvements
+- Running the collection via Newman CLI currently throws `await is only valid in async functions` error. The reason: Newman requires `await` to be wrapped in an async function, while Postman allows using `await` directly at the top level of a script. Planned improvement: wrap async assertions properly
+- Test data (e.g. `firstname`) is currently static and not unique per run. Planned improvement: generate unique values.
