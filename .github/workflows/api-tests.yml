@@ -8,8 +8,11 @@ on:
   schedule:
     - cron: '0 6 * * 1'    
 
+permissions:
+  contents: read
+  
 jobs:
-  newman:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -25,11 +28,24 @@ jobs:
           postman collection run postman/collection/restful-booker.postman_collection.json \
             -e postman/collection/restful-booker.postman_environment.json \
             -r cli,html \
-            --reporter-html-export report/report.html
+            --reporter-html-export site/postman/report.html
             
-      - name: Upload HTML report
+      - name: Upload Pages artifact
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: postman-report
-          path: report/report.html
+          path: site
+
+  deploy:
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
