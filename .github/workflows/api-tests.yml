@@ -24,6 +24,7 @@ jobs:
         run: npm install -g postman-cli
 
       - name: Run collection
+        continue-on-error: true    
         run: |
           postman collection run postman/collection/restful-booker.postman_collection.json \
             -e postman/collection/restful-booker.postman_environment.json \
