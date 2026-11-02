@@ -2,7 +2,7 @@
 
 **QA Engineer:** Buha Andrii
 
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Quality Assurance](https://img.shields.io/badge/Quality%20Assurance-4B5563?style=for-the-badge)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Quality Assurance](https://img.shields.io/badge/Quality%20Assurance-4B5563?style=for-the-badge) ![API Tests](https://github.com/Buha-Andrey/testing-of-API/actions/workflows/api-tests.yml/badge.svg)
 
 This QA project demonstrates testing of the [Restful-Booker API](https://restful-booker.herokuapp.com/), showcasing API test automation skills and STLC process - from test planning to test reporting.
 
