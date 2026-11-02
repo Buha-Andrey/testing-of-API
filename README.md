@@ -12,9 +12,10 @@ This QA project demonstrates testing of the [Restful-Booker API](https://restful
 | Test Plan | [`test-documentation/test-plan.md`](./test-documentation/test-plan.md) |
 | Test Cases | [`test-cases/`](./test-cases/) |
 | Postman Collection | [`postman/collection/`](./postman/collection/) |
-| HTML Run Report | [`postman/collection/report.html`](https://buha-andrey.github.io/testing-of-API/postman/report.html) |
+| HTML Run Report | [`https://buha-andrey.github.io/testing-of-API/postman/report.html`](https://buha-andrey.github.io/testing-of-API/postman/report.html) |
 | Bug Reports | [`bug-reports/`](./bug-reports/) |
-| Traceability Matrix | [`traceability-matrix/Traceability Matrix.csv`](https://docs.google.com/spreadsheets/d/111-6AXOlewD8npjZgfV-zUuCyTkDSOxg4d8EjTl8KXs/edit?usp=sharing) |
+| Traceability Matrix on Google Sheet | [`Traceability Matrix.csv`](https://docs.google.com/spreadsheets/d/111-6AXOlewD8npjZgfV-zUuCyTkDSOxg4d8EjTl8KXs/edit?usp=sharing) |
+| CI Pipeline | [`.github/workflows/api-tests.yml`](./.github/workflows/api-tests.yml) |
 | Test Summary Report | [`test-documentation/test-summary-report.md`](./test-documentation/test-summary-report.md) |
 
 ## End-to-End Example
@@ -39,7 +40,6 @@ cd testing-of-API
 # run the collection with environment 
 postman collection run postman/collection/restful-booker.postman_collection.json -e postman/collection/restful-booker.postman_environment.json 
 ```
-
 
 ## The Results
 
