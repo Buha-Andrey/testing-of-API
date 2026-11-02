@@ -28,8 +28,11 @@ Tracing a single test case - from written test case, through request in Postman 
 4. **Bug Report**  [`BUG-005: Booking is absent from GET /booking response when query parameter checkin is equal to the request body parameter checkin`](https://github.com/Buha-Andrey/testing-of-API/blob/main/bug-reports/BUG-005.md)
 
 ## Run the Collection
+Requirements - Node.js must be installed
 
 ```bash
+# install Postman CLI
+npm install -g postman-cli
 # clone the repo
 git clone https://github.com/Buha-Andrey/testing-of-API.git
 cd testing-of-API
