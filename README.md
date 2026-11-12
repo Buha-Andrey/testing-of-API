@@ -57,5 +57,7 @@ Full details: [Test Summary Report](./test-documentation/test-summary-report.md)
 
 
 ## Future Improvements
-- Running the collection via Newman CLI currently throws `await is only valid in async functions` error. The reason: Newman requires `await` to be wrapped in an async function, while Postman allows using `await` directly at the top level of a script. Planned improvement: wrap async assertions properly
+- ✅ ~~Running the collection via Newman CLI currently throws `await is only valid in async functions` error.~~ *(resolved Nov 2026)*
+
+  **Solution:** All `await pm.sendRequest(...)` calls were rewritten using the callback form, which works in both Postman and Newman. Sequential requests are nested, so each one starts only after the previous one has completed.
 - Test data (e.g. `firstname`) is currently static and not unique per run. Planned improvement: generate unique values.
